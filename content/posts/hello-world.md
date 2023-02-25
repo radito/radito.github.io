@@ -5,5 +5,3 @@ draft: false
 ---
 
 Hello World !!!
-
-{{< comment >}}

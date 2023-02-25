@@ -22,8 +22,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Radito's Blog
+  description: "Ngoprek, Internet of Things, Web Development, Software Development."
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
@@ -79,8 +79,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Welcome 🙋‍♂️"
+    Content: Blog tentang Teknologi, IoT, Software.
 
   # socialIcons:
   #   - name: twitter

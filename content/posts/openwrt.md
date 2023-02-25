@@ -31,5 +31,3 @@ OpenWRT has several benefits, including:
 ## Conclusion
 
 OpenWRT is a powerful and flexible firmware that offers users complete control over their routers. With its built-in package management system, security features, and customization options, OpenWRT is a popular choice for tech enthusiasts, developers, and network administrators. Its stability and reliability make it ideal for critical applications, while its active community provides support and contributes to its development.
-
-{{< comment >}}
