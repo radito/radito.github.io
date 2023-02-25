@@ -14,6 +14,12 @@ minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: ExampleSite
@@ -98,7 +104,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/radito/radito.github.io/content"
+    URL: "https://github.com/radito/radito.github.io/blob/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -122,9 +128,9 @@ menu:
       name: Archives
       url: /archives
       weight: 20
-    - identifier: Categories
-      name: Category
-      url: /Category
+    - identifier: search
+      name: Search
+      url: /search
       weight: 20
     # - identifier: example
     #   name: example.org
