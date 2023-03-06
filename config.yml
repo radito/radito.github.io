@@ -51,15 +51,15 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico?raw=1"
+    favicon16x16: "https://www.dropbox.com/s/nsmxqlwfoxa43od/favicon-16x16.png?raw=1"
+    favicon32x32: "https://www.dropbox.com/s/zgr3kmg1tv2lxxo/favicon-32x32.png?raw=1"
+    apple_touch_icon: "https://www.dropbox.com/s/y2dp3tvmm60lds0/apple-touch-icon.png?raw=1"
+    safari_pinned_tab: "https://www.dropbox.com/s/y2dp3tvmm60lds0/apple-touch-icon.png?raw=1"
 
   label:
     text: "Radito's Blog"
-    icon: 🙋‍♂️
+    icon: https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico?raw=1
     iconHeight: 35
 
   # profile-mode
