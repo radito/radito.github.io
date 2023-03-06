@@ -10,7 +10,17 @@
       <link>https://radito.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Mar 2023 00:15:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Mar 2023 08:42:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rooting Firmware Ori Bolt BL-100</title>
+      <link>https://radito.github.io/posts/25149034-6a06-4629-b657-5d42dac4a9b2/</link>
+      <pubDate>Mon, 06 Mar 2023 08:42:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/25149034-6a06-4629-b657-5d42dac4a9b2/</guid>
+      <description>Apa itu Rooting ? Rooting pada perangkat atau sistem terbenam adalah proses untuk mendapatkan akses ke sistem operasi perangkat yang memungkinkan pengguna untuk memodifikasi file sistem dan pengaturan yang sebelumnya dibatasi. Rooting dapat memberikan manfaat seperti menginstal firmware kustom, menghapus perangkat lunak yang telah diinstal sebelumnya, menyesuaikan antarmuka pengguna perangkat, dan menyesuaikan pengaturan sistem.
+Langkah - Langkah Akses Root Bolt BL-100 💡 Versi Firmware yang digunakan adalah HW: rev 2 | SW: BOLT!</description>
+    </item>
+    
     <item>
       <title>Akses Port UART/Serial Bolt BL-100</title>
       <link>https://radito.github.io/posts/fc30572e-a48e-4461-9776-2822965f34cc/</link>
@@ -41,15 +51,6 @@ Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod 
       <guid>https://radito.github.io/posts/423def8e-4caf-4d57-a782-2d9fc3d670ed/</guid>
       <description>OpenWRT is a Linux-based open-source operating system designed for embedded devices such as routers. It is a free and customizable firmware that allows users to modify and extend the functionality of their routers beyond what the manufacturer provides. OpenWRT is popular among tech enthusiasts, developers, and network administrators due to its flexibility, stability, and security features.
 Features OpenWRT comes with a range of features that make it a popular choice for embedded devices.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://radito.github.io/posts/25149034-6a06-4629-b657-5d42dac4a9b2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://radito.github.io/posts/25149034-6a06-4629-b657-5d42dac4a9b2/</guid>
-      <description></description>
     </item>
     
   </channel>
