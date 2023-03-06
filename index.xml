@@ -17,9 +17,8 @@
       <pubDate>Mon, 06 Mar 2023 00:15:00 +0000</pubDate>
       
       <guid>https://radito.github.io/posts/fc30572e-a48e-4461-9776-2822965f34cc/</guid>
-      <description>💡 Apa itu UART ?
-UART atau Universal Asynchronous Receiver/Transmitter adalah jenis port komunikasi serial pada komputer yang memungkinkan pengiriman dan penerimaan data secara asinkron antara perangkat. Port UART juga dikenal dengan sebutan port serial atau COM port. Biasanya, port UART digunakan untuk menghubungkan komputer dengan perangkat eksternal seperti modem, printer, atau perangkat pengukur, dan juga pada mikrokontroler untuk menghubungkan perangkat dan modul lainnya.
-Level logika UART 5V dan 3.</description>
+      <description>Apa itu UART ? UART atau Universal Asynchronous Receiver/Transmitter adalah jenis port komunikasi serial pada komputer yang memungkinkan pengiriman dan penerimaan data secara asinkron antara perangkat. Port UART juga dikenal dengan sebutan port serial atau COM port. Biasanya, port UART digunakan untuk menghubungkan komputer dengan perangkat eksternal seperti modem, printer, atau perangkat pengukur, dan juga pada mikrokontroler untuk menghubungkan perangkat dan modul lainnya.
+Level logika UART 5V dan 3.3V adalah dua level tegangan yang umum digunakan pada mikrokontroler dan sistem embedded.</description>
     </item>
     
     <item>
