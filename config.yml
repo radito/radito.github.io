@@ -59,7 +59,7 @@ params:
 
   label:
     text: "Radito's Blog"
-    icon: /apple-touch-icon.png
+    icon: 🙋‍♂️
     iconHeight: 35
 
   # profile-mode
