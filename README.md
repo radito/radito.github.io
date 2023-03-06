@@ -1,2 +1,3 @@
-# radito.github.io
-Github Blog
+# Radito's Blog
+
+Made with Hugo and Theme From PaperMod.

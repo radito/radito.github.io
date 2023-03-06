@@ -59,7 +59,7 @@ params:
 
   label:
     text: "Radito's Blog"
-    icon: https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico?raw=1
+    # icon: https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico?raw=1
     iconHeight: 35
 
   # profile-mode
