@@ -9,8 +9,8 @@ Router adalah perangkat jaringan yang meneruskan paket data antara jaringan komp
 Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE"><meta property="og:type" content="article"><meta property="og:url" content="https://radito.github.io/posts/d52505f2-fd5b-4dd1-8286-fdc37c700cfb/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-02-26T05:07:00+00:00"><meta property="article:modified_time" content="2023-02-26T05:07:00+00:00"><meta property="og:site_name" content="Radito's Blog"><meta name=twitter:card content="summary"><meta name=twitter:title content="Ngoprek Bolt BL-100"><meta name=twitter:description content="💡 Apa itu Router ?
 Router adalah perangkat jaringan yang meneruskan paket data antara jaringan komputer. Router terhubung dengan setidaknya dua jaringan, biasanya dua LAN (Local Area Network) atau WAN (Wide Area Network) atau LAN dan jaringan ISP (Internet Service Provider) nya. Router terletak di gerbang, tempat di mana dua atau lebih jaringan terhubung.
 ✳️ ToDo List Oprek
-Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://radito.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Ngoprek Bolt BL-100","item":"https://radito.github.io/posts/d52505f2-fd5b-4dd1-8286-fdc37c700cfb/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Ngoprek Bolt BL-100","name":"Ngoprek Bolt BL-100","description":"💡 Apa itu Router ?\nRouter adalah perangkat jaringan yang meneruskan paket data antara jaringan komputer. Router terhubung dengan setidaknya dua jaringan, biasanya dua LAN (Local Area Network) atau WAN (Wide Area Network) atau LAN dan jaringan ISP (Internet Service Provider) nya. Router terletak di gerbang, tempat di mana dua atau lebih jaringan terhubung.\n✳️ ToDo List Oprek\nAkses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE","keywords":[],"articleBody":" 💡 Apa itu Router ?\nRouter adalah perangkat jaringan yang meneruskan paket data antara jaringan komputer. Router terhubung dengan setidaknya dua jaringan, biasanya dua LAN (Local Area Network) atau WAN (Wide Area Network) atau LAN dan jaringan ISP (Internet Service Provider) nya. Router terletak di gerbang, tempat di mana dua atau lebih jaringan terhubung.\n✳️ ToDo List Oprek\nAkses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE\nModem LTE adalah perangkat yang menyediakan konektivitas data nirkabel broadband. Ia menggunakan standar Long-Term Evolution (LTE) untuk terhubung ke internet, yang merupakan jaringan data kecepatan tinggi yang digunakan oleh banyak operator seluler di seluruh dunia. Modem LTE sering digunakan sebagai koneksi internet cadangan atau dalam situasi di mana internet kabel tidak tersedia. Mereka dapat digunakan untuk menyediakan akses internet ke satu perangkat atau untuk membuat jaringan nirkabel yang dapat diakses oleh beberapa perangkat.\nBolt adalah perusahaan telekomunikasi di Indonesia yang menyediakan layanan internet 4G LTE. Mereka menawarkan berbagai paket dan perangkat, termasuk router dengan modem LTE bawaan yang dapat digunakan untuk membuat jaringan nirkabel. BL-100 adalah salah satu router tersebut yang tersedia untuk dibeli.\nSpesifikasi Bolt BL-100 Chipset Mediatek MT7620 (580 MHz) RAM 64 MB Bootloader U Boot Flash Winbond W25Q128BV (16 MB) Port 2x 10/100 Ethernet, 1x RJ-11 VoIP Modem Qualcomm LTE B40 (2300 Mhz) VID:05c6 PID:9026 Wireless Ralink RT2860 (2.4 Ghz) \u0026 Ralink RT2880 (5.8 Ghz) Voltage DC 12V 1A Antenna Port 2x External Antenna, 2 LTE U.FL , 2 WiFi U.FL Serial Port Yes, 3.3 V TTL, Baud 57600 8N1 Dengan menggunakan chipset mt7620 modem bolt bl 100 merupakan modem yang cukup mumpuni, karena sudah dilengkapi dengan modem lte + wireless dual band yang dapat menjadikan router ini sebagai andalan router rumahan. Selain itu chipset mt7620 sudah mendapatkan dukungan dari openwrt dan komunitas opreker lainnya sehingga kita bisa dengan mudah melakukan porting ke router ini.\nGambar diatas merupakan datasheet chipset MT7620 [LINK]. Chipset MT7620 didalamnya dilengkapi dengan beberapa fitur diataranya USB, SDHC, PCIe, Wifi, Switch, SPI, UART, etc. Fitur ini merupakan fitur utama dari chipset tersebut dan menurut saya fitur tersebut sangat lengkap jika fungsinya ingin digunakan pada embedded device seperti router. Karena fitur utama yang digunakan biasanya hanya Ethernet, WIFI, dan port USB untuk LTE.\nMT7620 sendiri menggunakan arsitektur MIPS. MIPS adalah RISC (reduced instruction set computing) arsitektur set instruksi yang dikembangkan oleh beberapa peneliti Stanford pada pertengahan 1980-an. Awalnya, nama tersebut merupakan singkatan dari Microprocessor without Interlocked Pipeline Stages, tetapi interlock antara tahapan pipeline akhirnya diperkenalkan kembali, hal ini karena alasan kinerja karena prosesor lain menjadi lebih maju.\nArsitektur MIPS memainkan peran utama dalam pasar prosesor tertanam (Embedded) dan ratusan pelanggan terus menggunakannya secara komersial, termasuk Teknologi Microchip, Mobileye, dan MediaTek. Pengaplikasian MIPS pada umumnya adalah set-top box, gateway internet, dan router.\nFoto PCB Bolt BL-100 Berikut adalah beberapa foto Mainboard/PCB bolt BL100. Gambar dibawah dapat digunakan untuk referensi opreker/modding.\nInformasi Tambahan Cpu Info # cat /proc/cpuinfo system type : MT7620 processor : 0 cpu model : MIPS 24Kc V5.0 BogoMIPS : 385.84 wait instruction : yes microsecond timers : yes tlb_entries : 32 extra interrupt vector : yes hardware watchpoint : yes, count: 4, address/irw mask: [0x0004, 0x0b7c, 0x0ff8, 0x03c3] ASEs implemented : mips16 dsp shadow register sets : 1 core : 0 VCED exceptions : not available VCEI exceptions : not available Partition Information # cat /proc/mtd dev: size erasesize name mtd0: 01000000 00010000 \"ALL\" mtd1: 00030000 00010000 \"Bootloader\" mtd2: 00010000 00010000 \"Config\" mtd3: 00010000 00010000 \"Factory\" mtd4: 009b0000 00010000 \"Kernel\" mtd5: 005f0000 00010000 \"Kernel2\" mtd6: 00010000 00010000 \"SmsInfo\" Kernel Information # cat /proc/version Linux version 2.6.36 (daniel@test-virtual-machine) (gcc version 3.4.2) #1 PREEMPT Mon Oct 16 17:44:26 CST 2017 Free Memory # free total used free shared buffers Mem: 58484 48016 10468 0 0 Swap: 0 0 0 Total: 58484 48016 10468 Top Process # top CPU: 8% usr 8% sys 0% nic 83% idle 0% io 0% irq 0% sirq Load average: 1.22 1.36 1.44 1/71 31850 PID PPID USER STAT VSZ %VSZ %CPU COMMAND 31847 23639 admin R 2012 3% 8% top 4381 4377 admin S 4084 7% 0% lighttpd -D -f /etc_ro/lighttpd/lightt 5488 5487 admin S 3512 6% 0% AskeyCM 5504 5487 admin S 3512 6% 0% AskeyCM 5511 5487 admin S 3512 6% 0% AskeyCM 5516 5487 admin S 3512 6% 0% AskeyCM 4707 1 admin S 3512 6% 0% AskeyCM 5487 4707 admin S 3512 6% 0% AskeyCM 5490 5487 admin S 3512 6% 0% AskeyCM 5505 5487 admin S 3512 6% 0% AskeyCM 5491 5487 admin S 3512 6% 0% AskeyCM 5512 5487 admin S 3512 6% 0% AskeyCM 5052 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5051 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 4773 1 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5047 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5045 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5050 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5041 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 ^C042 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 ","wordCount":"857","inLanguage":"en","datePublished":"2023-02-26T05:07:00Z","dateModified":"2023-02-26T05:07:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://radito.github.io/posts/d52505f2-fd5b-4dd1-8286-fdc37c700cfb/"},"publisher":{"@type":"Organization","name":"Radito's Blog","logo":{"@type":"ImageObject","url":"https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico?raw=1"}}}</script><script defer src=https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js></script>
-<script>window.addEventListener("load",function(){var e=initCookieConsent();e.run({current_lang:"en",autoclear_cookies:!0,page_scripts:!0,onFirstAction:function(){},onAccept:function(){},onChange:function(){},languages:{en:{consent_modal:{title:"We use cookies!",description:'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',primary_btn:{text:"Accept all",role:"accept_all"},secondary_btn:{text:"Reject all",role:"accept_necessary"}},settings_modal:{title:"Cookie preferences",save_settings_btn:"Save settings",accept_all_btn:"Accept all",reject_all_btn:"Reject all",close_btn_label:"Close",cookie_table_headers:[{col1:"Name"},{col2:"Domain"},{col3:"Expiration"},{col4:"Description"}],blocks:[{title:"Cookie usage 📢",description:"I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want."},{title:"Strictly necessary cookies",description:"These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly",toggle:{value:"necessary",enabled:!0,readonly:!0}},{title:"Performance and Analytics cookies",description:"These cookies allow the website to remember the choices you have made in the past",toggle:{value:"analytics",enabled:!0,readonly:!1},cookie_table:[{col1:"^_ga",col2:"google.com",col3:"2 years",col4:"Google Analytics Cookie",is_regex:!0}]}]}}}})})</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://radito.github.io/ accesskey=h title="Radito's Blog (Alt + H)">Radito's Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://radito.github.io/ title=Home><span>Home</span></a></li><li><a href=https://radito.github.io/archives title=Archives><span>Archives</span></a></li><li><a href=https://radito.github.io/search title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://radito.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://radito.github.io/posts/>Posts</a></div><h1 class=post-title>Ngoprek Bolt BL-100</h1><div class=post-meta><span title='2023-02-26 05:07:00 +0000 UTC'>February 26, 2023</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;857 words&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=https://github.com/radito/radito.github.io/blob/main/content/posts/d52505f2-fd5b-4dd1-8286-fdc37c700cfb.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><p><img loading=lazy src="https://www.dropbox.com/s/n2irdn6gptiscfs/596e6d8a80b5a2936864e6157c8356718d377b1b054f524631192c6dcf80d402.jpg?dl=0&amp;raw=1" alt="Ilustrasi Router (Unsplash)"></p><blockquote><p>💡 <strong>Apa itu Router ?</strong></p></blockquote><p>Router adalah perangkat jaringan yang meneruskan paket data antara jaringan komputer. Router terhubung dengan setidaknya dua jaringan, biasanya dua LAN (Local Area Network) atau WAN (Wide Area Network) atau LAN dan jaringan ISP (Internet Service Provider) nya. Router terletak di gerbang, tempat di mana dua atau lebih jaringan terhubung.</p><blockquote><p>✳️ <strong>ToDo List Oprek</strong></p></blockquote><ul><li><input checked disabled type=checkbox> <a href=https://radito.github.io/posts/fc30572e-a48e-4461-9776-2822965f34cc/>Akses Port UART/Serial</a></li><li><input checked disabled type=checkbox> <a href=https://radito.github.io/posts/25149034-6a06-4629-b657-5d42dac4a9b2/>Rooting Firmware Bawaan</a></li><li><input disabled type=checkbox> Dump Firmware Bawaan</li><li><input disabled type=checkbox> Install Mod USB Port</li><li><input disabled type=checkbox> Install Firmware OpenWRT</li><li><input disabled type=checkbox> Konfigurasi modem LTE di OpenWRT</li></ul><blockquote><p>✳️ <strong>Router Bolt dengan Modem LTE</strong></p></blockquote><p>Modem LTE adalah perangkat yang menyediakan konektivitas data nirkabel broadband. Ia menggunakan standar Long-Term Evolution (LTE) untuk terhubung ke internet, yang merupakan jaringan data kecepatan tinggi yang digunakan oleh banyak operator seluler di seluruh dunia. Modem LTE sering digunakan sebagai koneksi internet cadangan atau dalam situasi di mana internet kabel tidak tersedia. Mereka dapat digunakan untuk menyediakan akses internet ke satu perangkat atau untuk membuat jaringan nirkabel yang dapat diakses oleh beberapa perangkat.</p><p>Bolt adalah perusahaan telekomunikasi di Indonesia yang menyediakan layanan internet 4G LTE. Mereka menawarkan berbagai paket dan perangkat, termasuk router dengan modem LTE bawaan yang dapat digunakan untuk membuat jaringan nirkabel. BL-100 adalah salah satu router tersebut yang tersedia untuk dibeli.</p><p><img loading=lazy src="https://www.dropbox.com/s/w27jycgvuqg3wop/45429f240504dcb8b839034bee696868d8f330b7caa8f28b03530f198b112135.png?dl=0&amp;raw=1" alt="Gambar Bolt BL-100"></p><h1 id=spesifikasi-bolt-bl-100><strong>Spesifikasi Bolt BL-100</strong><a hidden class=anchor aria-hidden=true href=#spesifikasi-bolt-bl-100>#</a></h1><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Chipset</strong></td><td>Mediatek MT7620 (580 MHz)</td></tr><tr><td><strong>RAM</strong></td><td>64 MB</td></tr><tr><td><strong>Bootloader</strong></td><td>U Boot</td></tr><tr><td><strong>Flash</strong></td><td>Winbond W25Q128BV (16 MB)</td></tr><tr><td><strong>Port</strong></td><td>2x 10/100 Ethernet, 1x RJ-11 VoIP</td></tr><tr><td><strong>Modem</strong></td><td>Qualcomm LTE B40 (2300 Mhz) <code>VID:05c6 PID:9026</code></td></tr><tr><td><strong>Wireless</strong></td><td>Ralink RT2860 (2.4 Ghz) & Ralink RT2880 (5.8 Ghz)</td></tr><tr><td><strong>Voltage</strong></td><td>DC 12V 1A</td></tr><tr><td><strong>Antenna Port</strong></td><td>2x External Antenna, 2 LTE U.FL , 2 WiFi U.FL</td></tr><tr><td><strong>Serial Port</strong></td><td>Yes, 3.3 V TTL, Baud 57600 8N1</td></tr></tbody></table><p>Dengan menggunakan chipset mt7620 modem bolt bl 100 merupakan modem yang cukup mumpuni, karena sudah dilengkapi dengan modem lte + wireless dual band yang dapat menjadikan router ini sebagai andalan router rumahan. Selain itu chipset mt7620 sudah mendapatkan dukungan dari openwrt dan komunitas opreker lainnya sehingga kita bisa dengan mudah melakukan porting ke router ini.</p><p><img loading=lazy src="https://www.dropbox.com/s/mqlcyl2g5f740rr/bedfdfa783d9ca089474e169ff351c74846a2fc2123477b8e4b1abe44144abea.png?dl=0&amp;raw=1" alt="Block Diagram MT7620"></p><p>Gambar diatas merupakan datasheet chipset MT7620 <a href="https://datasheetspdf.com/datasheet/search.php?sWord=MT7620">[LINK]</a>. Chipset MT7620 didalamnya dilengkapi dengan beberapa fitur diataranya USB, SDHC, PCIe, Wifi, Switch, SPI, UART, etc. Fitur ini merupakan fitur utama dari chipset tersebut dan menurut saya fitur tersebut sangat lengkap jika fungsinya ingin digunakan pada embedded device seperti router. Karena fitur utama yang digunakan biasanya hanya Ethernet, WIFI, dan port USB untuk LTE.</p><p>MT7620 sendiri menggunakan arsitektur MIPS. MIPS adalah RISC (reduced instruction set computing) arsitektur set instruksi yang dikembangkan oleh beberapa peneliti Stanford pada pertengahan 1980-an. Awalnya, nama tersebut merupakan singkatan dari <em>Microprocessor without Interlocked Pipeline Stages</em>, tetapi interlock antara tahapan pipeline akhirnya diperkenalkan kembali, hal ini karena alasan kinerja karena prosesor lain menjadi lebih maju.</p><p>Arsitektur MIPS memainkan peran utama dalam pasar prosesor tertanam (Embedded) dan ratusan pelanggan terus menggunakannya secara komersial, termasuk Teknologi Microchip, Mobileye, dan MediaTek. Pengaplikasian MIPS pada umumnya adalah set-top box, gateway internet, dan router.</p><h1 id=foto-pcb-bolt-bl-100>Foto PCB Bolt BL-100<a hidden class=anchor aria-hidden=true href=#foto-pcb-bolt-bl-100>#</a></h1><p>Berikut adalah beberapa foto Mainboard/PCB bolt BL100. Gambar dibawah dapat digunakan untuk referensi opreker/modding.</p><p><img loading=lazy src="https://www.dropbox.com/s/mi41mkzwz6qmd5t/64e3e3499652a124782d5eb07137a0cd04849c0f5635a989bd5e5f9be6b1ff15.png?dl=0&amp;raw=1" alt="PCB Top Side"></p><p><img loading=lazy src="https://www.dropbox.com/s/clwrh7lsp5ai6ck/4964eec1245e15f02c9658ad1742305a8bc2392a3ed41edad6dc88dcd92db278.png?dl=0&amp;raw=1" alt="PCB Bottom Side"></p><h1 id=informasi-tambahan>Informasi Tambahan<a hidden class=anchor aria-hidden=true href=#informasi-tambahan>#</a></h1><h2 id=cpu-info>Cpu Info<a hidden class=anchor aria-hidden=true href=#cpu-info>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># cat /proc/cpuinfo </span>
+Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://radito.github.io/posts/"},{"@type":"ListItem","position":2,"name":"Ngoprek Bolt BL-100","item":"https://radito.github.io/posts/d52505f2-fd5b-4dd1-8286-fdc37c700cfb/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Ngoprek Bolt BL-100","name":"Ngoprek Bolt BL-100","description":"💡 Apa itu Router ?\nRouter adalah perangkat jaringan yang meneruskan paket data antara jaringan komputer. Router terhubung dengan setidaknya dua jaringan, biasanya dua LAN (Local Area Network) atau WAN (Wide Area Network) atau LAN dan jaringan ISP (Internet Service Provider) nya. Router terletak di gerbang, tempat di mana dua atau lebih jaringan terhubung.\n✳️ ToDo List Oprek\nAkses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE","keywords":[],"articleBody":" 💡 Apa itu Router ?\nRouter adalah perangkat jaringan yang meneruskan paket data antara jaringan komputer. Router terhubung dengan setidaknya dua jaringan, biasanya dua LAN (Local Area Network) atau WAN (Wide Area Network) atau LAN dan jaringan ISP (Internet Service Provider) nya. Router terletak di gerbang, tempat di mana dua atau lebih jaringan terhubung.\n✳️ ToDo List Oprek\nAkses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE\nModem LTE adalah perangkat yang menyediakan konektivitas data nirkabel broadband. Ia menggunakan standar Long-Term Evolution (LTE) untuk terhubung ke internet, yang merupakan jaringan data kecepatan tinggi yang digunakan oleh banyak operator seluler di seluruh dunia. Modem LTE sering digunakan sebagai koneksi internet cadangan atau dalam situasi di mana internet kabel tidak tersedia. Mereka dapat digunakan untuk menyediakan akses internet ke satu perangkat atau untuk membuat jaringan nirkabel yang dapat diakses oleh beberapa perangkat.\nBolt adalah perusahaan telekomunikasi di Indonesia yang menyediakan layanan internet 4G LTE. Mereka menawarkan berbagai paket dan perangkat, termasuk router dengan modem LTE bawaan yang dapat digunakan untuk membuat jaringan nirkabel. BL-100 adalah salah satu router tersebut yang tersedia untuk dibeli.\nSpesifikasi Bolt BL-100 Chipset Mediatek MT7620 (580 MHz) RAM 64 MB Bootloader U Boot Flash Winbond W25Q128BV (16 MB) Port 2x 10/100 Ethernet, 1x RJ-11 VoIP Modem Qualcomm LTE B40 (2300 Mhz) VID:05c6 PID:9026 Wireless Ralink RT2860 (2.4 Ghz) \u0026 Ralink RT2880 (5.8 Ghz) Voltage DC 12V 1A Antenna Port 2x External Antenna, 2 LTE U.FL , 2 WiFi U.FL Serial Port Yes, 3.3 V TTL, Baud 57600 8N1 Dengan menggunakan chipset mt7620 modem bolt bl 100 merupakan modem yang cukup mumpuni, karena sudah dilengkapi dengan modem lte + wireless dual band yang dapat menjadikan router ini sebagai andalan router rumahan. Selain itu chipset mt7620 sudah mendapatkan dukungan dari openwrt dan komunitas opreker lainnya sehingga kita bisa dengan mudah melakukan porting ke router ini.\nGambar diatas merupakan datasheet chipset MT7620 [LINK]. Chipset MT7620 didalamnya dilengkapi dengan beberapa fitur diataranya USB, SDHC, PCIe, Wifi, Switch, SPI, UART, etc. Fitur ini merupakan fitur utama dari chipset tersebut dan menurut saya fitur tersebut sangat lengkap jika fungsinya ingin digunakan pada embedded device seperti router. Karena fitur utama yang digunakan biasanya hanya Ethernet, WIFI, dan port USB untuk LTE.\nMT7620 sendiri menggunakan arsitektur MIPS. MIPS adalah RISC (reduced instruction set computing) arsitektur set instruksi yang dikembangkan oleh beberapa peneliti Stanford pada pertengahan 1980-an. Awalnya, nama tersebut merupakan singkatan dari Microprocessor without Interlocked Pipeline Stages, tetapi interlock antara tahapan pipeline akhirnya diperkenalkan kembali, hal ini karena alasan kinerja karena prosesor lain menjadi lebih maju.\nArsitektur MIPS memainkan peran utama dalam pasar prosesor tertanam (Embedded) dan ratusan pelanggan terus menggunakannya secara komersial, termasuk Teknologi Microchip, Mobileye, dan MediaTek. Pengaplikasian MIPS pada umumnya adalah set-top box, gateway internet, dan router.\nFoto PCB Bolt BL-100 Berikut adalah beberapa foto Mainboard/PCB bolt BL100. Gambar dibawah dapat digunakan untuk referensi opreker/modding.\nInformasi Tambahan Cpu Info # cat /proc/cpuinfo system type : MT7620 processor : 0 cpu model : MIPS 24Kc V5.0 BogoMIPS : 385.84 wait instruction : yes microsecond timers : yes tlb_entries : 32 extra interrupt vector : yes hardware watchpoint : yes, count: 4, address/irw mask: [0x0004, 0x0b7c, 0x0ff8, 0x03c3] ASEs implemented : mips16 dsp shadow register sets : 1 core : 0 VCED exceptions : not available VCEI exceptions : not available Partition Information # cat /proc/mtd dev: size erasesize name mtd0: 01000000 00010000 \"ALL\" mtd1: 00030000 00010000 \"Bootloader\" mtd2: 00010000 00010000 \"Config\" mtd3: 00010000 00010000 \"Factory\" mtd4: 009b0000 00010000 \"Kernel\" mtd5: 005f0000 00010000 \"Kernel2\" mtd6: 00010000 00010000 \"SmsInfo\" Kernel Information # cat /proc/version Linux version 2.6.36 (daniel@test-virtual-machine) (gcc version 3.4.2) #1 PREEMPT Mon Oct 16 17:44:26 CST 2017 Free Memory # free total used free shared buffers Mem: 58484 48016 10468 0 0 Swap: 0 0 0 Total: 58484 48016 10468 Top Process # top CPU: 8% usr 8% sys 0% nic 83% idle 0% io 0% irq 0% sirq Load average: 1.22 1.36 1.44 1/71 31850 PID PPID USER STAT VSZ %VSZ %CPU COMMAND 31847 23639 admin R 2012 3% 8% top 4381 4377 admin S 4084 7% 0% lighttpd -D -f /etc_ro/lighttpd/lightt 5488 5487 admin S 3512 6% 0% AskeyCM 5504 5487 admin S 3512 6% 0% AskeyCM 5511 5487 admin S 3512 6% 0% AskeyCM 5516 5487 admin S 3512 6% 0% AskeyCM 4707 1 admin S 3512 6% 0% AskeyCM 5487 4707 admin S 3512 6% 0% AskeyCM 5490 5487 admin S 3512 6% 0% AskeyCM 5505 5487 admin S 3512 6% 0% AskeyCM 5491 5487 admin S 3512 6% 0% AskeyCM 5512 5487 admin S 3512 6% 0% AskeyCM 5052 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5051 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 4773 1 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5047 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5045 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5050 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 5041 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 ^C042 5039 admin S 2744 5% 0% /usr/d2/vapp -i 192.168.1.123 Log Serial U-Boot 1.1.3 (Jun 8 2016 - 16:40:15) Board: APSoC DRAM: 64 MB relocate_code Pointer at: 83fb8000 enable ephy clock...done. rf reg 29 = 5 SSC disabled. spi_wait_nsec: 29 spi device id: ef 40 18 0 0 (40180000) find flash: W25Q128BV raspi_read: from:30000 len:1000 *** Warning - bad CRC, using default environment ============================================ LTE Router Version: 2.0.5 -------------------------------------------- ASIC 7620_MP (Port5\u003c-\u003eNone) DRAM component: 512 Mbits DDR, width 16 DRAM bus: 16 bit Total memory: 64 MBytes Flash component: 16 MBytes NOR Flash Date:Jun 8 2016 Time:16:40:15 ============================================ raspi_read: from:30000 len:10000 Erasing SPI Flash... raspi_erase: offs:30000 len:10000 . Writing to SPI Flash... raspi_write: to:30000 len:10000 . done raspi_read: from:30000 len:10000 Erasing SPI Flash... raspi_erase: offs:30000 len:10000 . Writing to SPI Flash... raspi_write: to:30000 len:10000 . done raspi_read: from:30000 len:10000 Erasing SPI Flash... raspi_erase: offs:30000 len:10000 . Writing to SPI Flash... raspi_write: to:30000 len:10000 . done Release Version ! raspi_read: from:30000 len:10000 Erasing SPI Flash... raspi_erase: offs:30000 len:10000 . Writing to SPI Flash... raspi_write: to:30000 len:10000 . done icache: sets:512, ways:4, linesz:32 ,total:65536 dcache: sets:256, ways:4, linesz:32 ,total:32768 ##### The CPU freq = 580 MHZ #### estimate memory size =64 Mbytes 3: System Boot system code via Flash. ## Booting image at bc050000 ... raspi_read: from:30000 len:10000 Erasing SPI Flash... raspi_erase: offs:30000 len:10000 . Writing to SPI Flash... raspi_write: to:30000 len:10000 . done raspi_read: from:50000 len:40 Image Name: Linux Kernel Image Image Type: MIPS Linux Kernel Image (lzma compressed) Data Size: 6314347 Bytes = 6 MB Load Address: 80000000 Entry Point: 8000c4b0 raspi_read: from:50040 len:60596b Verifying Checksum ... OK Uncompressing Kernel Image ... OK No initrd ## Transferring control to Linux (at address 8000c4b0) ... ## Giving linux memsize in MB, 64 Starting kernel ... LINUX started... THIS IS ASIC Linux version 2.6.36 (daniel@test-virtual-machine) (gcc version 3.4.2) #1 PREEMPT Mon Oct 16 17:44:26 CST 2017 The CPU feqenuce set to 580 MHz MIPS CPU sleep mode enabled. PCIE: bypass PCIe DLL. PCIE: Elastic buffer control: Addr:0x68 -\u003e 0xB4 disable all power about PCIe CPU revision is: 00019650 (MIPS 24Kc) Software DMA cache coherency Determined physical RAM map: memory: 04000000 @ 00000000 (usable) Initrd not found or empty - disabling initrd Zone PFN ranges: Normal 0x00000000 -\u003e 0x00004000 Movable zone start PFN for each node early_node_map[1] active PFN ranges 0: 0x00000000 -\u003e 0x00004000 Built 1 zonelists in Zone order, mobility grouping on. Total pages: 16256 Kernel command line: console=ttyS1,57600n8 root=/dev/ram0 console=ttyS0 PID hash table entries: 256 (order: -2, 1024 bytes) Dentry cache hash table entries: 8192 (order: 3, 32768 bytes) Inode-cache hash table entries: 4096 (order: 2, 16384 bytes) Primary instruction cache 64kB, VIPT, , 4-waylinesize 32 bytes. Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes Writing ErrCtl register=0007e6b8 Readback ErrCtl register=0007e6b8 Memory: 54196k/65536k available (4955k kernel code, 11340k reserved, 1227k data, 4288k init, 0k highmem) NR_IRQS:128 console [ttyS1] enabled Calibrating delay loop... 385.84 BogoMIPS (lpj=1929216) pid_max: default: 32768 minimum: 301 Mount-cache hash table entries: 512 NET: Registered protocol family 16 RALINK_GPIOMODE = 141710 RALINK_GPIOMODE = 141710 PPLL_CFG1=0xe54000 MT7620 PPLL lock PPLL_DRV =0x80080504 start PCIe register access RALINK_RSTCTRL = 2400000 RALINK_CLKCFG1 = 75afffc0 *************** MT7620 PCIe RC mode ************* PCIE0 enabled Port 0 N_FTS = 1b105000 init_rt2880pci done bio: create slab at 0 vgaarb: loaded SCSI subsystem initialized usbcore: registered new interface driver usbfs usbcore: registered new interface driver hub usbcore: registered new device driver usb pci 0000:00:00.0: BAR 0: can't assign mem (size 0x80000000) pci 0000:00:00.0: BAR 8: assigned [mem 0x20000000-0x200fffff] pci 0000:00:00.0: BAR 9: assigned [mem 0x20100000-0x201fffff pref] pci 0000:00:00.0: BAR 1: assigned [mem 0x20200000-0x2020ffff] pci 0000:00:00.0: BAR 1: set to [mem 0x20200000-0x2020ffff] (PCI address [0x20200000-0x2020ffff] pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff 64bit] pci 0000:01:00.0: BAR 0: set to [mem 0x20000000-0x200fffff 64bit] (PCI address [0x20000000-0x200fffff] pci 0000:01:00.0: BAR 6: assigned [mem 0x20100000-0x2010ffff pref] pci 0000:00:00.0: PCI bridge to [bus 01-01] pci 0000:00:00.0: bridge window [io disabled] pci 0000:00:00.0: bridge window [mem 0x20000000-0x200fffff] pci 0000:00:00.0: bridge window [mem 0x20100000-0x201fffff pref] BAR0 at slot 0 = 0 bus=0x0, slot = 0x0 res[0]-\u003estart = 0 res[0]-\u003eend = 0 res[1]-\u003estart = 20200000 res[1]-\u003eend = 2020ffff res[2]-\u003estart = 0 res[2]-\u003eend = 0 res[3]-\u003estart = 0 res[3]-\u003eend = 0 res[4]-\u003estart = 0 res[4]-\u003eend = 0 res[5]-\u003estart = 0 res[5]-\u003eend = 0 bus=0x1, slot = 0x0 res[0]-\u003estart = 20000000 res[0]-\u003eend = 200fffff res[1]-\u003estart = 0 res[1]-\u003eend = 0 res[2]-\u003estart = 0 res[2]-\u003eend = 0 res[3]-\u003estart = 0 res[3]-\u003eend = 0 res[4]-\u003estart = 0 res[4]-\u003eend = 0 res[5]-\u003estart = 0 res[5]-\u003eend = 0 Switching to clocksource Ralink Systick timer NET: Registered protocol family 2 IP route cache hash table entries: 1024 (order: 0, 4096 bytes) TCP established hash table entries: 2048 (order: 2, 16384 bytes) TCP bind hash table entries: 2048 (order: 1, 8192 bytes) TCP: Hash tables configured (established 2048 bind 2048) TCP reno registered UDP hash table entries: 256 (order: 0, 4096 bytes) UDP-Lite hash table entries: 256 (order: 0, 4096 bytes) NET: Registered protocol family 1 Load Ralink Timer0 Module Load Ralink Timer1 Module RT3xxx EHCI/OHCI init. fuse init (API version 7.15) msgmni has been set to 105 Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254) io scheduler noop registered (default) Set the GPIO 32 data 0x0000FEFF get gpio Dir 2FF9 get gpio data EEF Ralink gpio driver initialized Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled serial8250: ttyS0 at MMIO 0x10000500 (irq = 37) is a 16550A serial8250: ttyS1 at MMIO 0x10000c00 (irq = 12) is a 16550A brd: module loaded deice id : ef 40 18 0 0 (40180000) W25Q128BV(ef 40180000) (16384 Kbytes) mtd .name = raspi, .size = 0x01000000 (0M) .erasesize = 0x00000010 (0K) .numeraseregions = 65536 Creating 7 MTD partitions on \"raspi\": 0x000000000000-0x000001000000 : \"ALL\" 0x000000000000-0x000000030000 : \"Bootloader\" 0x000000030000-0x000000040000 : \"Config\" 0x000000040000-0x000000050000 : \"Factory\" 0x000000050000-0x000000a00000 : \"Kernel\" 0x000000a00000-0x000000ff0000 : \"Kernel2\" 0x000000ff0000-0x000001000000 : \"SmsInfo\" rdm_major = 253 SMACCR1 -- : 0x0000e8d1 SMACCR0 -- : 0x1b075a79 Ralink APSoC Ethernet Driver Initilization. v3.1 256 rx/tx descriptors allocated, mtu = 1500! SMACCR1 -- : 0x0000e8d1 SMACCR0 -- : 0x1b075a79 PROC INIT OK! PPP generic driver version 2.4.2 PPP MPPE Compression module registered NET: Registered protocol family 24 PPTP driver version 0.8.5 IMQ driver loaded successfully. Hooking IMQ after NAT on PREROUTING. Hooking IMQ before NAT on POSTROUTING. usbcore: registered new interface driver cdc_ether usbcore: registered new interface driver cdc_subset === pAd = c0282000, size = 2173688 === \u003c-- RTMPAllocTxRxRingMemory, Status=0 \u003c-- RTMPAllocAdapterBlock, Status=0 device_id =0x7662 ==\u003erlt_wlan_chip_onoff(): OnOff:1, Reset= 1, pAd-\u003eWlanFunCtrl:0x0, Reg-WlanFunCtrl=0x20a RtmpChipOpsEepromHook::e2p_type=0, inf_Type=5 RtmpEepromGetDefault::e2p_dafault=2 NVM is efuse and the information is too less to bring up the interface Force to use Flash mode NVM is FLASH mode (pAd-\u003eflash_offset = 0x48000) get_dev_name_prefix(): dev_idx = 1, dev_name_prefix=rai === pAd = c0497000, size = 2173688 === \u003c-- RTMPAllocTxRxRingMemory, Status=0 \u003c-- RTMPAllocAdapterBlock, Status=0 RtmpChipOpsEepromHook::e2p_type=0, inf_Type=4 RtmpEepromGetDefault::e2p_dafault=2 NVM is FLASH mode (pAd-\u003eflash_offset = 0x40000) get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=ra ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver rt3xxx-ehci rt3xxx-ehci: Ralink EHCI Host Controller rt3xxx-ehci rt3xxx-ehci: new USB bus registered, assigned bus number 1 rt3xxx-ehci rt3xxx-ehci: irq 18, io mem 0x101c0000 rt3xxx-ehci rt3xxx-ehci: USB 0.0 started, EHCI 1.00 hub 1-0:1.0: USB hub found hub 1-0:1.0: 1 port detected ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver rt3xxx-ohci rt3xxx-ohci: RT3xxx OHCI Controller rt3xxx-ohci rt3xxx-ohci: new USB bus registered, assigned bus number 2 rt3xxx-ohci rt3xxx-ohci: irq 18, io mem 0x101c1000 hub 2-0:1.0: USB hub found hub 2-0:1.0: 1 port detected usbcore: registered new interface driver cdc_acm cdc_acm: v0.26:USB Abstract Control Model driver for USB modems and ISDN adapters Initializing USB Mass Storage driver... usbcore: registered new interface driver usb-storage USB Mass Storage support registered. MTK MSDC device init. msdc0 -\u003e ops_get_cd return\u003c0\u003e \u003c- msdc_ops_get_cd() : L\u003c2317\u003e PID\u003c0x1a\u003e mtk-sd: MediaTek MT6575 MSDC Driver GACT probability on Mirror/redirect action on Simple TC action Loaded netem: version 1.2 u32 classifier Performance counters on input device check on Actions configured Netfilter messages via NETLINK v0.30. nf_conntrack version 0.5.0 (846 buckets, 3384 max) ctnetlink v0.93: registering with nfnetlink. nf_conntrack_rtsp v0.6.21 loading matchsize=264 xt_time: kernel timezone is -0000 IPVS: Registered protocols () IPVS: Connection hash table configured (size=4096, memory=32Kbytes) IPVS: ipvs loaded. GRE over IPv4 demultiplexor driver gre: can't add protocol nf_nat_rtsp v0.6.21 loading ip_tables: (C) 2000-2006 Netfilter Core Team, Type=Restricted Cone arp_tables: (C) 2002 David S. Miller TCP cubic registered NET: Registered protocol family 10 NET: Registered protocol family 17 Bridge firewalling registered L2TP core driver, V2.0 PPPoL2TP kernel driver, V2.0 802.1Q VLAN Support v1.8 Ben Greear All bugs added by David S. Miller Warning: unable to open an initial console. Freeing unused kernel memory: 4288k freed Algorithmics/MIPS FPU Emulator v1.5 Welcome to __ ___ _____ _____ _ _______ ______ _____ _ ___ | \\ / || ___|| __ \\ | || __ ||__ __|| ___|| | / / | ^ || |__ | | \\ \\| || | | | | | | |__ | |/ / | | | || ___|| | | || || |__| | | | | ___|| \\ | | | || |___ | |__/ /| || __ | | | | |___ | |\\ \\ |__| |___||_____||_____/ |_||_| |_| |_| |_____||_| \\__\\ = Everyday Genius = GobiNet: 2011-07-29-1026 usbcore: registered new interface driver GobiNet [CC] [12] init daemon... cat: can't open '/var/run/LteManager.status': No such file or directory Password for 'admin' changed ##### disable 1st wireless interface ##### ##### disable 2nd wireless interface ##### rmmod: rlt_wifi: No such file or directory insmod: rlt_wifi.ko: module not found cat: can't open '/var/run/LteManager.status': No such file or directory RX[0] DESC a21ec000 size = 4096 RX[1] DESC a21ed000 size = 4096 E2pAccessMode=0 cfg_mode=9 cfg_mode=9 wmode_band_equal(): Band Equal! 1. Phy Mode = 14 Country Region from e2p = ffff 2. Phy Mode = 14 3. Phy Mode = 14 AntCfgInit: primary/secondary ant 0/1 Current Temperature from BBP_R49=0xfffffff8 RT6352_TssiTableAdjust: upper_bound = 0x7F decimal: 127 RT6352_TssiTableAdjust: lower_bound = 0xFFFFFF80 decimal: -128 *** RT6352_TssiTableAdjust: G Tssi[-7 .. +7] = -128 -1 -1 -1 -128 -1 -1 - -1 - -1 -1 -1 -1 -1 -1 -1, offset=-9, tuning=0 RT6352_TssiTableAdjust: G Tssi[-7 .. +7] = -128 -10 -10 -10 -128 -10 -10 - -10 - -10 -10 -10 -10 -10 -10 -10, offset=-9, tuning=0 mp_temperature=0x00, step = +7 E2PROM: G Tssi[-7 .. +7] = -128 -10 -10 -10 -128 -10 -10 - -10 - -10 -10 -10 -10 -10 -10 -10, offset=-9, tuning=0 ChipStructAssign(): RALINK6352 hook ! bAutoTxAgcG = 0 MCS Set = ff ff 00 00 01 APStartUp(): AP Set CentralFreq at 7(Prim=9, HT-CentCh=7, VHT-CentCh=0, BBP_BW=1) Main bssid = e8:d1:1b:07:5a:7b \u003c==== rt28xx_init, Status=0 get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=wds get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=wds get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=wds get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=wds get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=apcli RTMPDrvOpen(1):Check if PDMA is idle! RTMPDrvOpen(2):Check if PDMA is idle! build time = 20141115060606a rom patch for E3 IC platform = ALPS hw/sw version = �� patch version = FW Version:0.0.00 Build:1 Build Time:201507311614____ fw for E3 IC RX[0] DESC a278b000 size = 4096 RX[1] DESC a278c000 size = 4096 E2pAccessMode=0 cfg_mode=14 cfg_mode=14 wmode_band_equal(): Band Not Equal! 1. Phy Mode = 49 drivers/net/wireless/rlt_wifi_ap/../rlt_wifi_p1/chips/mt76x2.c:2844 assert (ad-\u003eTxPower[choffset].Channel == 42)failed Country Region from e2p = ffff 2. Phy Mode = 49 3. Phy Mode = 49 andes_pci_fw_init 0x1300 = 00073200 AntCfgInit: primary/secondary ant 0/1 andes_load_cr:cr_type(2) ChipStructAssign(): MT76x2 hook ! bAutoTxAgcG = 0 MCS Set = ff ff 00 00 01 mt76x2_bbp_adjust():rf_bw=2, ext_ch=1, PrimCh=157, HT-CentCh=159, VHT-CentCh=155 TX0 power compensation = 0x38 TX1 power compensation = 0x38 APStartUp(): AP Set CentralFreq at 155(Prim=157, HT-CentCh=159, VHT-CentCh=155, BBP_BW=2) mt76x2_calibration(channel = 155) Main bssid = e8:d1:1b:07:5a:7c mt76x2_reinit_agc_gain:original agc_vga0 = 0x5c, agc_vga1 = 0x5c mt76x2_reinit_agc_gain:updated agc_vga0 = 0x5c, agc_vga1 = 0x5c mt76x2_reinit_hi_lna_gain:original hi_lna0 = 0x27, hi_lna1 = 0x27 mt76x2_reinit_hi_lna_gain:updated hi_lna0 = 0x27, hi_lna1 = 0x27 original vga value(chain0) = 5c original vga value(chain1) = 5c \u003c==== rt28xx_init, Status=0 get_dev_name_prefix(): dev_idx = 1, dev_name_prefix=wdsi get_dev_name_prefix(): dev_idx = 1, dev_name_prefix=wdsi get_dev_name_prefix(): dev_idx = 1, dev_name_prefix=wdsi get_dev_name_prefix(): dev_idx = 1, dev_name_prefix=wdsi get_dev_name_prefix(): dev_idx = 1, dev_name_prefix=apclii RTMPDrvOpen(1):Check if PDMA is idle! RTMPDrvOpen(2):Check if PDMA is idle! ifconfig: ioctl 0x8913 failed: No such device brctl: bridge br0: No such device or address ##### configVIF ##### Raeth v3.1 (Tasklet) phy_tx_ring = 0x014d2000, tx_ring = 0xa14d2000 phy_rx_ring0 = 0x014d3000, rx_ring0 = 0xa14d3000 SMACCR1 -- : 0x0000e8d1 SMACCR0 -- : 0x1b075a79 CDMA_CSG_CFG = 81000000 GDMA1_FWD_CFG = 20710000 vconfig: ioctl error for rem: No such device vconfig: ioctl error for rem: No such device rmmod: 8021q: No such file or directory device eth2 entered promiscuous mode ##### config Ralink ESW vlan partition (LLLLW) ##### usb 1-1: new high speed USB device using rt3xxx-ehci and address 2 switch reg write offset=2004, value=ff0003 switch reg write offset=2104, value=ff0003 switch reg write offset=2204, value=ff0003 switch reg write offset=2304, value=ff0003 switch reg write offset=2404, value=ff0003 switch reg write offset=2504, value=ff0003 switch reg write offset=2010, value=810000c0 switch reg write offset=2110, value=810000c0 switch reg write offset=2210, value=810000c0 switch reg write offset=2310, value=810000c0 switch reg write offset=2410, value=810000c0 switch reg write offset=2510, value=810000c0 switch reg write offset=2610, value=81000000 switch reg write offset=2710, value=81000000 switch reg write offset=2604, value=20ff0003 switch reg write offset=2704, value=20ff0003 Special Tag Disabled switch reg write offset=2610, value=81000000 switch reg write offset=2014, value=10001 switch reg write offset=2114, value=10001 switch reg write offset=2214, valucdc_acm 1-1:1.2: This device cannot do calls on its own. It is not a modem. e=10001 switch reg write offset=2314, value=10001 switch reg write offset=2414cdc_acm 1-1:1.2: ttyACM0: USB ACM device , value=10002 switch reg write offset=2514, value=10001 REG_ESW_WT_MAC_ATC is 0x7ff0002 done. cdc_acm 1-1:1.4: This device cannot do calls on its own. It is not a modem. cdc_acm 1-1:1.4: ttyACM1: USB ACM device GobiNet 1-1:1.6: usb0: register 'GobiNet' at usb-rt3xxx-1, GobiNet Ethernet Device, e2:d4:81:3d:2f:ff device ra0 entered promiscuous mode device eth2.1 entered promiscuous mode device rai0 entered promiscuous mode ##### enable 2nd wireless interface ##### cat: can't open '/var/run/LteManager.status': No such file or directory lted.sh (at+cmd) run ... cat: can't open '/var/run/LteManager.status': No such file or directory cat: can't open '/var/run/LteManager.status': No such file or directory data=[ up lted.sh set_lte_led] del_reg():/var/run/.ip_up.reg, lted.sh set_lte_led br0: port 3(rai0) entering listening state br0: port 3(rai0) entering listening state br0: port 2(eth2.1) entering listening state br0: port 2(eth2.1) entering listening state br0: port 1(ra0) entering listening state br0: port 1(ra0) entering listening state add_reg():/var/run/.ip_up.reg, lted.sh set_lte_led ifconfig: ioctl 0x8914 failed: Cannot assign requested address ifconfig: ioctl 0x8914 failed: Cannot assign requested address cat: can't open '/var/run/LteManager.status': No such file or directory cat: can't open '/var/run/LteManager.status': No such file or directory route: ioctl 0x890c failed: No such process killall: rt2860apd: no process killed route: ioctl 0x890c failed: No such process killall: rtinicapd: no process killed killall: wapid: no process killed iptables v1.4.10: Couldn't load target `firewall':File not found Try `iptables -h' or 'iptables --help' for more information. Mason : *pbLinkState = false (17:30:24) Type 0x10 : result=65494 callendreason[0]=36 callendreason[1]=101 Type 0x11 : result=65494 callendreasontype[0]=0 callendreasontype[1]=0 callendreasontype[2]=0 callendreasontype[3]=0 iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `firewall_input':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. creating qcqmi0 ++ /sbin/automount_lte.sh: qcqmi0, qcqmi0, add, ===================== usb device: usbdev1.2 path: vendor: 05c6 product: 9026 manufacturer: Askey LTE module iptables v1.4.10: Couldn't load target `mac_filter':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `ipport_filter':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `web_filter':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `malicious_filter':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `malicious_input_filter':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `port_trigger':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `trigger_prerouting':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. cat: can't open '/var/run/LteManager.status': No such file or directory firewall.c:iptablesIPPortFilterRun:529:Warning: can't find \"IPPortFilterRules\" in flash. firewall.c:iptablesMACFilterRun:449:Warning: can't find \"MacFilteringRules\" in flash. cat: can't open '/var/run/LteManager.status': No such file or directory cat: can't open '/var/run/LteManager.status': No such file or directory cat: can't open '/var/run/LteManager.status': No such file or directory sh: /bin/super_dmz: not found iptables v1.4.10: Couldn't load target `port_forward':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `port_forward':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found Try `iptables -h' or 'iptables --help' for more information. iptables v1.4.10: Couldn't load target `DMZ':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. iptables v1.4.10: Couldn't load target `vpn_passthrough':File not found Try `iptables -h' or 'iptables --help' for more information. iptables: No chain/target/match by that name. 30 0 180 0 HTTP/1.0 302 Redirect Pragma: no-cache Cache-Control: no-cache Content-Type: text/html Location: (null) my.pool.ntp.org: Unknown host syslogd: illegal option -- C BusyBox v1.12.1 (2017-10-16 17:28:06 CST) multi-call binary Usage: syslogd [OPTION]... cat: can't open '/var/run/LteManager.status': No such file or directory get_ipaddr: ioctl SIOCGIFADDR error for usb0 internet.c:ripd_restart:435:The WAN IP is still undeterminated... cat: can't open '/var/run/LteManager.status': No such file or directory 0 HTTP/1.0 302 Redirect Pragma: no-cache Cache-Control: no-cache Content-Type: text/html Location: (null) cat: can't open '/var/run/LteManager.status': No such file or directory Power LED On 33 data=[ up start_voip.sh] [auto fota] Start session connection after 4267 seconds del_reg():/var/run/.port_up.reg, start_voip.sh cat: can't open '/var/run/LteManager.status': No such file or directory init: can't log to /dev/tty5 starting pid 4531, tty '/dev/ttyS1': '/sbin/getty 57600 ttyS1' no osal_kernel: module license 'D2 Technologies, Inc. Proprietary Software' taints kernel. Disabling lock debugging due to kernel taint [KEYMGR] Starting... osal_module.c:39 OSAL module_init OK lkm.c 178: devname /dev/d2vtspr /dev/d2vtspr registered successfuly @ 249. ralink login: ======== vPort Release +D2Tech+ VPORT WANG2_R_1_6_11 ======== D2 Technologies _ _ __ / | '/ /_ _ /_ _ _ /_ _ ._ _ /_.'/_ //_'/_ / // //_///_//_///_'_\\ _/ Unified Communication Products www.d2tech.com [keymgr] Bolt new board rev 5(RED RSSI LED) vapp_init.c:621 - hostname_ptr=192.168.1.123 vapp_init.c:661 VAPP hostname 192.168.1.123 ('192.168.1.123') vapp_init.c:663 VAPP hostname 192.168.1.123 (hbo c0a8017b) _VAPP_initSetupSystem 767 - flashTmo = 5 _VAPP_initSetupSystem 1008 - MGMT port = 10000 Set reg status: Unregistered vapp_init: uname00= not set infc=0 appr=0 vapp_init: - forcing default uname00=000000001681920 vapp_init.c 1503: dname00 not set, defaulting to uname '000000001681920' vapp_init.c 1622 - dtmfType = 2, coderEnable[VAPP_CODER_DTMF] = 1 vapp_init.c: 1719 UA 0 is configured with these params: Hostname: 192.168.1.123 (hbo c0a8017b) HostAddr: 192.168.1.123 Authname: ******** Password: ******** Domain: ims.indosat.com Realm: ims.indosat.com Registrar: 202.62.29.166 Proxy : 202.62.29.166 Username[0]: ******** Dname[0]: ******** Channel 0: Revision Id 0xA2(0x18:0x2) Si3217x: Channel 0 : Type = PROSLIC si3217x : Channel 0 : Type = 24 si3217x : Channel 0 : Rev = 2 Si3217x: loading patch: 06182014 Si3217x: Channel 0 : VBAT Up = 58.375 v br0: port 3(rai0) entering learning state br0: port 2(eth2.1) entering learning state br0: port 1(ra0) entering learning state Si3217x: PCMStart vapp_vtsp.c: VTSP_getVersion reports v1.4.0 IOCTL_QMI_GET_SERVICE_FILE : arg=1 =============== result=1b01 =============== IOCTL_QMI_GET_SERVICE_FILE : arg=2 =============== result=202 =============== IOCTL_QMI_GET_SERVICE_FILE : arg=3 =============== result=303 =============== D2 Technologies, Inc. _ _ __ / | '/ /_ _ /_ _ _ /_ _ ._ _ /_.'/_ //_'/_ / // //_///_//_///_'_\\ _/ Unified Communication Products www.d2tech.com +D2Tech+ VTSP_RT WANG2_R_1_6_11 +D2Tech+ VTSP_RT WANG2_R_1_6_11 +D2Tech+ +D2Tech+ +D2Tech+ comm trunk-comm src-svn: 4647 d2tools-svn: 4647 +D2Tech+ +D2Tech+ +D2Tech+ +D2Tech+ +D2Tech+ +D2Tech+ +D2Tech+ tone M24KEC4_B_1_1-tone_1_2 src-svn: 225 d2tools-svn: 3454 +D2Tech+ +D2Tech+ +D2Tech+ +D2Tech+ _VHW_start 874 Start the TASKLET mode [LTE] -\u003e LTE module found. Set call status: Idle [LTE] -\u003e No SIM card. br0: topology change detected, propagating br0: port 3(rai0) entering forwarding state br0: topology change detected, propagating br0: port 2(eth2.1) entering forwarding state br0: topology change detected, propagating br0: port 1(ra0) entering forwarding state VTSPR_task 141 RealTime miss found in VTSPR tasklet mode ","wordCount":"4177","inLanguage":"en","datePublished":"2023-02-26T05:07:00Z","dateModified":"2023-02-26T05:07:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://radito.github.io/posts/d52505f2-fd5b-4dd1-8286-fdc37c700cfb/"},"publisher":{"@type":"Organization","name":"Radito's Blog","logo":{"@type":"ImageObject","url":"https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico?raw=1"}}}</script><script defer src=https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js></script>
+<script>window.addEventListener("load",function(){var e=initCookieConsent();e.run({current_lang:"en",autoclear_cookies:!0,page_scripts:!0,onFirstAction:function(){},onAccept:function(){},onChange:function(){},languages:{en:{consent_modal:{title:"We use cookies!",description:'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',primary_btn:{text:"Accept all",role:"accept_all"},secondary_btn:{text:"Reject all",role:"accept_necessary"}},settings_modal:{title:"Cookie preferences",save_settings_btn:"Save settings",accept_all_btn:"Accept all",reject_all_btn:"Reject all",close_btn_label:"Close",cookie_table_headers:[{col1:"Name"},{col2:"Domain"},{col3:"Expiration"},{col4:"Description"}],blocks:[{title:"Cookie usage 📢",description:"I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want."},{title:"Strictly necessary cookies",description:"These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly",toggle:{value:"necessary",enabled:!0,readonly:!0}},{title:"Performance and Analytics cookies",description:"These cookies allow the website to remember the choices you have made in the past",toggle:{value:"analytics",enabled:!0,readonly:!1},cookie_table:[{col1:"^_ga",col2:"google.com",col3:"2 years",col4:"Google Analytics Cookie",is_regex:!0}]}]}}}})})</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://radito.github.io/ accesskey=h title="Radito's Blog (Alt + H)">Radito's Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://radito.github.io/ title=Home><span>Home</span></a></li><li><a href=https://radito.github.io/archives title=Archives><span>Archives</span></a></li><li><a href=https://radito.github.io/search title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://radito.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://radito.github.io/posts/>Posts</a></div><h1 class=post-title>Ngoprek Bolt BL-100</h1><div class=post-meta><span title='2023-02-26 05:07:00 +0000 UTC'>February 26, 2023</span>&nbsp;·&nbsp;20 min&nbsp;·&nbsp;4177 words&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=https://github.com/radito/radito.github.io/blob/main/content/posts/d52505f2-fd5b-4dd1-8286-fdc37c700cfb.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><p><img loading=lazy src="https://www.dropbox.com/s/n2irdn6gptiscfs/596e6d8a80b5a2936864e6157c8356718d377b1b054f524631192c6dcf80d402.jpg?dl=0&amp;raw=1" alt="Ilustrasi Router (Unsplash)"></p><blockquote><p>💡 <strong>Apa itu Router ?</strong></p></blockquote><p>Router adalah perangkat jaringan yang meneruskan paket data antara jaringan komputer. Router terhubung dengan setidaknya dua jaringan, biasanya dua LAN (Local Area Network) atau WAN (Wide Area Network) atau LAN dan jaringan ISP (Internet Service Provider) nya. Router terletak di gerbang, tempat di mana dua atau lebih jaringan terhubung.</p><blockquote><p>✳️ <strong>ToDo List Oprek</strong></p></blockquote><ul><li><input checked disabled type=checkbox> <a href=https://radito.github.io/posts/fc30572e-a48e-4461-9776-2822965f34cc/>Akses Port UART/Serial</a></li><li><input checked disabled type=checkbox> <a href=https://radito.github.io/posts/25149034-6a06-4629-b657-5d42dac4a9b2/>Rooting Firmware Bawaan</a></li><li><input disabled type=checkbox> Dump Firmware Bawaan</li><li><input disabled type=checkbox> Install Mod USB Port</li><li><input disabled type=checkbox> Install Firmware OpenWRT</li><li><input disabled type=checkbox> Konfigurasi modem LTE di OpenWRT</li></ul><blockquote><p>✳️ <strong>Router Bolt dengan Modem LTE</strong></p></blockquote><p>Modem LTE adalah perangkat yang menyediakan konektivitas data nirkabel broadband. Ia menggunakan standar Long-Term Evolution (LTE) untuk terhubung ke internet, yang merupakan jaringan data kecepatan tinggi yang digunakan oleh banyak operator seluler di seluruh dunia. Modem LTE sering digunakan sebagai koneksi internet cadangan atau dalam situasi di mana internet kabel tidak tersedia. Mereka dapat digunakan untuk menyediakan akses internet ke satu perangkat atau untuk membuat jaringan nirkabel yang dapat diakses oleh beberapa perangkat.</p><p>Bolt adalah perusahaan telekomunikasi di Indonesia yang menyediakan layanan internet 4G LTE. Mereka menawarkan berbagai paket dan perangkat, termasuk router dengan modem LTE bawaan yang dapat digunakan untuk membuat jaringan nirkabel. BL-100 adalah salah satu router tersebut yang tersedia untuk dibeli.</p><p><img loading=lazy src="https://www.dropbox.com/s/w27jycgvuqg3wop/45429f240504dcb8b839034bee696868d8f330b7caa8f28b03530f198b112135.png?dl=0&amp;raw=1" alt="Gambar Bolt BL-100"></p><h1 id=spesifikasi-bolt-bl-100><strong>Spesifikasi Bolt BL-100</strong><a hidden class=anchor aria-hidden=true href=#spesifikasi-bolt-bl-100>#</a></h1><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Chipset</strong></td><td>Mediatek MT7620 (580 MHz)</td></tr><tr><td><strong>RAM</strong></td><td>64 MB</td></tr><tr><td><strong>Bootloader</strong></td><td>U Boot</td></tr><tr><td><strong>Flash</strong></td><td>Winbond W25Q128BV (16 MB)</td></tr><tr><td><strong>Port</strong></td><td>2x 10/100 Ethernet, 1x RJ-11 VoIP</td></tr><tr><td><strong>Modem</strong></td><td>Qualcomm LTE B40 (2300 Mhz) <code>VID:05c6 PID:9026</code></td></tr><tr><td><strong>Wireless</strong></td><td>Ralink RT2860 (2.4 Ghz) & Ralink RT2880 (5.8 Ghz)</td></tr><tr><td><strong>Voltage</strong></td><td>DC 12V 1A</td></tr><tr><td><strong>Antenna Port</strong></td><td>2x External Antenna, 2 LTE U.FL , 2 WiFi U.FL</td></tr><tr><td><strong>Serial Port</strong></td><td>Yes, 3.3 V TTL, Baud 57600 8N1</td></tr></tbody></table><p>Dengan menggunakan chipset mt7620 modem bolt bl 100 merupakan modem yang cukup mumpuni, karena sudah dilengkapi dengan modem lte + wireless dual band yang dapat menjadikan router ini sebagai andalan router rumahan. Selain itu chipset mt7620 sudah mendapatkan dukungan dari openwrt dan komunitas opreker lainnya sehingga kita bisa dengan mudah melakukan porting ke router ini.</p><p><img loading=lazy src="https://www.dropbox.com/s/mqlcyl2g5f740rr/bedfdfa783d9ca089474e169ff351c74846a2fc2123477b8e4b1abe44144abea.png?dl=0&amp;raw=1" alt="Block Diagram MT7620"></p><p>Gambar diatas merupakan datasheet chipset MT7620 <a href="https://datasheetspdf.com/datasheet/search.php?sWord=MT7620">[LINK]</a>. Chipset MT7620 didalamnya dilengkapi dengan beberapa fitur diataranya USB, SDHC, PCIe, Wifi, Switch, SPI, UART, etc. Fitur ini merupakan fitur utama dari chipset tersebut dan menurut saya fitur tersebut sangat lengkap jika fungsinya ingin digunakan pada embedded device seperti router. Karena fitur utama yang digunakan biasanya hanya Ethernet, WIFI, dan port USB untuk LTE.</p><p>MT7620 sendiri menggunakan arsitektur MIPS. MIPS adalah RISC (reduced instruction set computing) arsitektur set instruksi yang dikembangkan oleh beberapa peneliti Stanford pada pertengahan 1980-an. Awalnya, nama tersebut merupakan singkatan dari <em>Microprocessor without Interlocked Pipeline Stages</em>, tetapi interlock antara tahapan pipeline akhirnya diperkenalkan kembali, hal ini karena alasan kinerja karena prosesor lain menjadi lebih maju.</p><p>Arsitektur MIPS memainkan peran utama dalam pasar prosesor tertanam (Embedded) dan ratusan pelanggan terus menggunakannya secara komersial, termasuk Teknologi Microchip, Mobileye, dan MediaTek. Pengaplikasian MIPS pada umumnya adalah set-top box, gateway internet, dan router.</p><h1 id=foto-pcb-bolt-bl-100>Foto PCB Bolt BL-100<a hidden class=anchor aria-hidden=true href=#foto-pcb-bolt-bl-100>#</a></h1><p>Berikut adalah beberapa foto Mainboard/PCB bolt BL100. Gambar dibawah dapat digunakan untuk referensi opreker/modding.</p><p><img loading=lazy src="https://www.dropbox.com/s/mi41mkzwz6qmd5t/64e3e3499652a124782d5eb07137a0cd04849c0f5635a989bd5e5f9be6b1ff15.png?dl=0&amp;raw=1" alt="PCB Top Side"></p><p><img loading=lazy src="https://www.dropbox.com/s/clwrh7lsp5ai6ck/4964eec1245e15f02c9658ad1742305a8bc2392a3ed41edad6dc88dcd92db278.png?dl=0&amp;raw=1" alt="PCB Bottom Side"></p><h1 id=informasi-tambahan>Informasi Tambahan<a hidden class=anchor aria-hidden=true href=#informasi-tambahan>#</a></h1><h2 id=cpu-info>Cpu Info<a hidden class=anchor aria-hidden=true href=#cpu-info>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl><span class=c1># cat /proc/cpuinfo </span>
 </span></span><span class=line><span class=cl>system <span class=nb>type</span>             : MT7620
 </span></span><span class=line><span class=cl>processor               : <span class=m>0</span>
 </span></span><span class=line><span class=cl>cpu model               : MIPS 24Kc V5.0
@@ -65,6 +65,858 @@ Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod 
 </span></span><span class=line><span class=cl> <span class=m>5050</span>  <span class=m>5039</span> admin    S     <span class=m>2744</span>   5%   0% /usr/d2/vapp -i 192.168.1.123 
 </span></span><span class=line><span class=cl> <span class=m>5041</span>  <span class=m>5039</span> admin    S     <span class=m>2744</span>   5%   0% /usr/d2/vapp -i 192.168.1.123 
 </span></span><span class=line><span class=cl>^C042  <span class=m>5039</span> admin    S     <span class=m>2744</span>   5%   0% /usr/d2/vapp -i 192.168.1.123
+</span></span></code></pre></div><h2 id=log-serial>Log Serial<a hidden class=anchor aria-hidden=true href=#log-serial>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>U-Boot 1.1.3 <span class=o>(</span>Jun  <span class=m>8</span> <span class=m>2016</span> - 16:40:15<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Board:  APSoC DRAM:  <span class=m>64</span> MB
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>relocate_code Pointer at: 83fb8000
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>enable</span> ephy clock...done. rf reg <span class=nv>29</span> <span class=o>=</span> <span class=m>5</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>SSC disabled.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>spi_wait_nsec: <span class=m>29</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>spi device id: ef <span class=m>40</span> <span class=m>18</span> <span class=m>0</span> <span class=m>0</span> <span class=o>(</span>40180000<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>find flash: W25Q128BV
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_read: from:30000 len:1000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>*** Warning - bad CRC, using default <span class=nv>environment</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>============================================</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>LTE Router Version: 2.0.5
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>-------------------------------------------- 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>ASIC 7620_MP <span class=o>(</span>Port5&lt;-&gt;None<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>DRAM component: <span class=m>512</span> Mbits DDR, width <span class=m>16</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>DRAM bus: <span class=m>16</span> bit
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Total memory: <span class=m>64</span> MBytes
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Flash component: <span class=m>16</span> MBytes NOR Flash
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Date:Jun  <span class=m>8</span> <span class=m>2016</span>  Time:16:40:15
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>============================================</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_read: from:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Erasing SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_erase: offs:30000 len:10000
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Writing to SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_write: to:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>done</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_read: from:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Erasing SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_erase: offs:30000 len:10000
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Writing to SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_write: to:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>done</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_read: from:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Erasing SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_erase: offs:30000 len:10000
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Writing to SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_write: to:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>done</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Release Version !
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_read: from:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Erasing SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_erase: offs:30000 len:10000
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Writing to SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_write: to:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>done</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>icache: sets:512, ways:4, linesz:32 ,total:65536
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>dcache: sets:256, ways:4, linesz:32 ,total:32768 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> <span class=c1>##### The CPU freq = 580 MHZ #### </span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> estimate memory <span class=nv>size</span> <span class=o>=</span><span class=m>64</span> Mbytes
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>3: System Boot system code via Flash.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>## Booting image at bc050000 ...</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_read: from:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Erasing SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_erase: offs:30000 len:10000
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Writing to SPI Flash...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_write: to:30000 len:10000 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>done</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_read: from:50000 len:40 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Image Name:   Linux Kernel Image
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Image Type:   MIPS Linux Kernel Image <span class=o>(</span>lzma compressed<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Data Size:    <span class=m>6314347</span> <span class=nv>Bytes</span> <span class=o>=</span>  <span class=m>6</span> MB
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Load Address: <span class=m>80000000</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Entry Point:  8000c4b0
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>raspi_read: from:50040 len:60596b 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Verifying Checksum ... OK
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Uncompressing Kernel Image ... OK
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>No initrd
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>## Transferring control to Linux (at address 8000c4b0) ...</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>## Giving linux memsize in MB, 64</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Starting kernel ...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>LINUX started...
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> THIS IS ASIC
+</span></span><span class=line><span class=cl>Linux version 2.6.36 <span class=o>(</span>daniel@test-virtual-machine<span class=o>)</span> <span class=o>(</span>gcc version 3.4.2<span class=o>)</span> <span class=c1>#1 PREEMPT Mon Oct 16 17:44:26 CST 2017</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> The CPU feqenuce <span class=nb>set</span> to <span class=m>580</span> MHz
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl> MIPS CPU sleep mode enabled.
+</span></span><span class=line><span class=cl> PCIE: bypass PCIe DLL.
+</span></span><span class=line><span class=cl> PCIE: Elastic buffer control: Addr:0x68 -&gt; 0xB4
+</span></span><span class=line><span class=cl> disable all power about PCIe
+</span></span><span class=line><span class=cl>CPU revision is: <span class=m>00019650</span> <span class=o>(</span>MIPS 24Kc<span class=o>)</span>
+</span></span><span class=line><span class=cl>Software DMA cache coherency
+</span></span><span class=line><span class=cl>Determined physical RAM map:
+</span></span><span class=line><span class=cl> memory: <span class=m>04000000</span> @ <span class=m>00000000</span> <span class=o>(</span>usable<span class=o>)</span>
+</span></span><span class=line><span class=cl>Initrd not found or empty - disabling initrd
+</span></span><span class=line><span class=cl>Zone PFN ranges:
+</span></span><span class=line><span class=cl>  Normal   0x00000000 -&gt; 0x00004000
+</span></span><span class=line><span class=cl>Movable zone start PFN <span class=k>for</span> each node
+</span></span><span class=line><span class=cl>early_node_map<span class=o>[</span>1<span class=o>]</span> active PFN ranges
+</span></span><span class=line><span class=cl>    0: 0x00000000 -&gt; 0x00004000
+</span></span><span class=line><span class=cl>Built <span class=m>1</span> zonelists in Zone order, mobility grouping on.  Total pages: <span class=m>16256</span>
+</span></span><span class=line><span class=cl>Kernel <span class=nb>command</span> line: <span class=nv>console</span><span class=o>=</span>ttyS1,57600n8 <span class=nv>root</span><span class=o>=</span>/dev/ram0 <span class=nv>console</span><span class=o>=</span>ttyS0
+</span></span><span class=line><span class=cl>PID <span class=nb>hash</span> table entries: <span class=m>256</span> <span class=o>(</span>order: -2, <span class=m>1024</span> bytes<span class=o>)</span>
+</span></span><span class=line><span class=cl>Dentry cache <span class=nb>hash</span> table entries: <span class=m>8192</span> <span class=o>(</span>order: 3, <span class=m>32768</span> bytes<span class=o>)</span>
+</span></span><span class=line><span class=cl>Inode-cache <span class=nb>hash</span> table entries: <span class=m>4096</span> <span class=o>(</span>order: 2, <span class=m>16384</span> bytes<span class=o>)</span>
+</span></span><span class=line><span class=cl>Primary instruction cache 64kB, VIPT, , 4-waylinesize <span class=m>32</span> bytes.
+</span></span><span class=line><span class=cl>Primary data cache 32kB, 4-way, PIPT, no aliases, linesize <span class=m>32</span> bytes
+</span></span><span class=line><span class=cl>Writing ErrCtl <span class=nv>register</span><span class=o>=</span>0007e6b8
+</span></span><span class=line><span class=cl>Readback ErrCtl <span class=nv>register</span><span class=o>=</span>0007e6b8
+</span></span><span class=line><span class=cl>Memory: 54196k/65536k available <span class=o>(</span>4955k kernel code, 11340k reserved, 1227k data, 4288k init, 0k highmem<span class=o>)</span>
+</span></span><span class=line><span class=cl>NR_IRQS:128
+</span></span><span class=line><span class=cl>console <span class=o>[</span>ttyS1<span class=o>]</span> enabled
+</span></span><span class=line><span class=cl>Calibrating delay loop... 385.84 BogoMIPS <span class=o>(</span><span class=nv>lpj</span><span class=o>=</span>1929216<span class=o>)</span>
+</span></span><span class=line><span class=cl>pid_max: default: <span class=m>32768</span> minimum: <span class=m>301</span>
+</span></span><span class=line><span class=cl>Mount-cache <span class=nb>hash</span> table entries: <span class=m>512</span>
+</span></span><span class=line><span class=cl>NET: Registered protocol family <span class=m>16</span>
+</span></span><span class=line><span class=cl><span class=nv>RALINK_GPIOMODE</span> <span class=o>=</span> <span class=m>141710</span>
+</span></span><span class=line><span class=cl><span class=nv>RALINK_GPIOMODE</span> <span class=o>=</span> <span class=m>141710</span>
+</span></span><span class=line><span class=cl><span class=nv>PPLL_CFG1</span><span class=o>=</span>0xe54000
+</span></span><span class=line><span class=cl>MT7620 PPLL lock
+</span></span><span class=line><span class=cl><span class=nv>PPLL_DRV</span> <span class=o>=</span>0x80080504
+</span></span><span class=line><span class=cl>start PCIe register access
+</span></span><span class=line><span class=cl><span class=nv>RALINK_RSTCTRL</span> <span class=o>=</span> <span class=m>2400000</span>
+</span></span><span class=line><span class=cl><span class=nv>RALINK_CLKCFG1</span> <span class=o>=</span> 75afffc0
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>*************** MT7620 PCIe RC mode *************
+</span></span><span class=line><span class=cl>PCIE0 enabled
+</span></span><span class=line><span class=cl>Port <span class=m>0</span> <span class=nv>N_FTS</span> <span class=o>=</span> 1b105000
+</span></span><span class=line><span class=cl>init_rt2880pci <span class=k>done</span>
+</span></span><span class=line><span class=cl>bio: create slab &lt;bio-0&gt; at <span class=m>0</span>
+</span></span><span class=line><span class=cl>vgaarb: loaded
+</span></span><span class=line><span class=cl>SCSI subsystem initialized
+</span></span><span class=line><span class=cl>usbcore: registered new interface driver usbfs
+</span></span><span class=line><span class=cl>usbcore: registered new interface driver hub
+</span></span><span class=line><span class=cl>usbcore: registered new device driver usb
+</span></span><span class=line><span class=cl>pci 0000:00:00.0: BAR 0: can<span class=s1>&#39;t assign mem (size 0x80000000)
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:00:00.0: BAR 8: assigned [mem 0x20000000-0x200fffff]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:00:00.0: BAR 9: assigned [mem 0x20100000-0x201fffff pref]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:00:00.0: BAR 1: assigned [mem 0x20200000-0x2020ffff]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:00:00.0: BAR 1: set to [mem 0x20200000-0x2020ffff] (PCI address [0x20200000-0x2020ffff]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff 64bit]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:01:00.0: BAR 0: set to [mem 0x20000000-0x200fffff 64bit] (PCI address [0x20000000-0x200fffff]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:01:00.0: BAR 6: assigned [mem 0x20100000-0x2010ffff pref]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:00:00.0: PCI bridge to [bus 01-01]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:00:00.0:   bridge window [io  disabled]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:00:00.0:   bridge window [mem 0x20000000-0x200fffff]
+</span></span></span><span class=line><span class=cl><span class=s1>pci 0000:00:00.0:   bridge window [mem 0x20100000-0x201fffff pref]
+</span></span></span><span class=line><span class=cl><span class=s1>BAR0 at slot 0 = 0
+</span></span></span><span class=line><span class=cl><span class=s1>bus=0x0, slot = 0x0
+</span></span></span><span class=line><span class=cl><span class=s1>res[0]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[0]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[1]-&gt;start = 20200000
+</span></span></span><span class=line><span class=cl><span class=s1>res[1]-&gt;end = 2020ffff
+</span></span></span><span class=line><span class=cl><span class=s1>res[2]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[2]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[3]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[3]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[4]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[4]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[5]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[5]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>bus=0x1, slot = 0x0
+</span></span></span><span class=line><span class=cl><span class=s1>res[0]-&gt;start = 20000000
+</span></span></span><span class=line><span class=cl><span class=s1>res[0]-&gt;end = 200fffff
+</span></span></span><span class=line><span class=cl><span class=s1>res[1]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[1]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[2]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[2]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[3]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[3]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[4]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[4]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[5]-&gt;start = 0
+</span></span></span><span class=line><span class=cl><span class=s1>res[5]-&gt;end = 0
+</span></span></span><span class=line><span class=cl><span class=s1>Switching to clocksource Ralink Systick timer
+</span></span></span><span class=line><span class=cl><span class=s1>NET: Registered protocol family 2
+</span></span></span><span class=line><span class=cl><span class=s1>IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+</span></span></span><span class=line><span class=cl><span class=s1>TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+</span></span></span><span class=line><span class=cl><span class=s1>TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+</span></span></span><span class=line><span class=cl><span class=s1>TCP: Hash tables configured (established 2048 bind 2048)
+</span></span></span><span class=line><span class=cl><span class=s1>TCP reno registered
+</span></span></span><span class=line><span class=cl><span class=s1>UDP hash table entries: 256 (order: 0, 4096 bytes)
+</span></span></span><span class=line><span class=cl><span class=s1>UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+</span></span></span><span class=line><span class=cl><span class=s1>NET: Registered protocol family 1
+</span></span></span><span class=line><span class=cl><span class=s1>Load Ralink Timer0 Module
+</span></span></span><span class=line><span class=cl><span class=s1>Load Ralink Timer1 Module
+</span></span></span><span class=line><span class=cl><span class=s1>RT3xxx EHCI/OHCI init.
+</span></span></span><span class=line><span class=cl><span class=s1>fuse init (API version 7.15)
+</span></span></span><span class=line><span class=cl><span class=s1>msgmni has been set to 105
+</span></span></span><span class=line><span class=cl><span class=s1>Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+</span></span></span><span class=line><span class=cl><span class=s1>io scheduler noop registered (default)
+</span></span></span><span class=line><span class=cl><span class=s1>Set the GPIO 32 data 0x0000FEFF 
+</span></span></span><span class=line><span class=cl><span class=s1>get gpio Dir 2FF9 
+</span></span></span><span class=line><span class=cl><span class=s1>get gpio data EEF 
+</span></span></span><span class=line><span class=cl><span class=s1>Ralink gpio driver initialized
+</span></span></span><span class=line><span class=cl><span class=s1>Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+</span></span></span><span class=line><span class=cl><span class=s1>serial8250: ttyS0 at MMIO 0x10000500 (irq = 37) is a 16550A
+</span></span></span><span class=line><span class=cl><span class=s1>serial8250: ttyS1 at MMIO 0x10000c00 (irq = 12) is a 16550A
+</span></span></span><span class=line><span class=cl><span class=s1>brd: module loaded
+</span></span></span><span class=line><span class=cl><span class=s1>deice id : ef 40 18 0 0 (40180000)
+</span></span></span><span class=line><span class=cl><span class=s1>W25Q128BV(ef 40180000) (16384 Kbytes)
+</span></span></span><span class=line><span class=cl><span class=s1>mtd .name = raspi, .size = 0x01000000 (0M) .erasesize = 0x00000010 (0K) .numeraseregions = 65536
+</span></span></span><span class=line><span class=cl><span class=s1>Creating 7 MTD partitions on &#34;raspi&#34;:
+</span></span></span><span class=line><span class=cl><span class=s1>0x000000000000-0x000001000000 : &#34;ALL&#34;
+</span></span></span><span class=line><span class=cl><span class=s1>0x000000000000-0x000000030000 : &#34;Bootloader&#34;
+</span></span></span><span class=line><span class=cl><span class=s1>0x000000030000-0x000000040000 : &#34;Config&#34;
+</span></span></span><span class=line><span class=cl><span class=s1>0x000000040000-0x000000050000 : &#34;Factory&#34;
+</span></span></span><span class=line><span class=cl><span class=s1>0x000000050000-0x000000a00000 : &#34;Kernel&#34;
+</span></span></span><span class=line><span class=cl><span class=s1>0x000000a00000-0x000000ff0000 : &#34;Kernel2&#34;
+</span></span></span><span class=line><span class=cl><span class=s1>0x000000ff0000-0x000001000000 : &#34;SmsInfo&#34;
+</span></span></span><span class=line><span class=cl><span class=s1>rdm_major = 253
+</span></span></span><span class=line><span class=cl><span class=s1>SMACCR1 -- : 0x0000e8d1
+</span></span></span><span class=line><span class=cl><span class=s1>SMACCR0 -- : 0x1b075a79
+</span></span></span><span class=line><span class=cl><span class=s1>Ralink APSoC Ethernet Driver Initilization. v3.1  256 rx/tx descriptors allocated, mtu = 1500!
+</span></span></span><span class=line><span class=cl><span class=s1>SMACCR1 -- : 0x0000e8d1
+</span></span></span><span class=line><span class=cl><span class=s1>SMACCR0 -- : 0x1b075a79
+</span></span></span><span class=line><span class=cl><span class=s1>PROC INIT OK!
+</span></span></span><span class=line><span class=cl><span class=s1>PPP generic driver version 2.4.2
+</span></span></span><span class=line><span class=cl><span class=s1>PPP MPPE Compression module registered
+</span></span></span><span class=line><span class=cl><span class=s1>NET: Registered protocol family 24
+</span></span></span><span class=line><span class=cl><span class=s1>PPTP driver version 0.8.5
+</span></span></span><span class=line><span class=cl><span class=s1>IMQ driver loaded successfully.
+</span></span></span><span class=line><span class=cl><span class=s1>	Hooking IMQ after NAT on PREROUTING.
+</span></span></span><span class=line><span class=cl><span class=s1>	Hooking IMQ before NAT on POSTROUTING.
+</span></span></span><span class=line><span class=cl><span class=s1>usbcore: registered new interface driver cdc_ether
+</span></span></span><span class=line><span class=cl><span class=s1>usbcore: registered new interface driver cdc_subset
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>=== pAd = c0282000, size = 2173688 ===
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>&lt;-- RTMPAllocTxRxRingMemory, Status=0
+</span></span></span><span class=line><span class=cl><span class=s1>&lt;-- RTMPAllocAdapterBlock, Status=0
+</span></span></span><span class=line><span class=cl><span class=s1>device_id =0x7662
+</span></span></span><span class=line><span class=cl><span class=s1>==&gt;rlt_wlan_chip_onoff(): OnOff:1, Reset= 1, pAd-&gt;WlanFunCtrl:0x0, Reg-WlanFunCtrl=0x20a
+</span></span></span><span class=line><span class=cl><span class=s1>RtmpChipOpsEepromHook::e2p_type=0, inf_Type=5
+</span></span></span><span class=line><span class=cl><span class=s1>RtmpEepromGetDefault::e2p_dafault=2
+</span></span></span><span class=line><span class=cl><span class=s1>NVM is efuse and the information is too less to bring up the interface
+</span></span></span><span class=line><span class=cl><span class=s1>Force to use Flash mode
+</span></span></span><span class=line><span class=cl><span class=s1>NVM is FLASH mode (pAd-&gt;flash_offset = 0x48000)
+</span></span></span><span class=line><span class=cl><span class=s1>get_dev_name_prefix(): dev_idx = 1, dev_name_prefix=rai
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>=== pAd = c0497000, size = 2173688 ===
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>&lt;-- RTMPAllocTxRxRingMemory, Status=0
+</span></span></span><span class=line><span class=cl><span class=s1>&lt;-- RTMPAllocAdapterBlock, Status=0
+</span></span></span><span class=line><span class=cl><span class=s1>RtmpChipOpsEepromHook::e2p_type=0, inf_Type=4
+</span></span></span><span class=line><span class=cl><span class=s1>RtmpEepromGetDefault::e2p_dafault=2
+</span></span></span><span class=line><span class=cl><span class=s1>NVM is FLASH mode (pAd-&gt;flash_offset = 0x40000)
+</span></span></span><span class=line><span class=cl><span class=s1>get_dev_name_prefix(): dev_idx = 0, dev_name_prefix=ra
+</span></span></span><span class=line><span class=cl><span class=s1>ehci_hcd: USB 2.0 &#39;</span>Enhanced<span class=s1>&#39; Host Controller (EHCI) Driver
+</span></span></span><span class=line><span class=cl><span class=s1>rt3xxx-ehci rt3xxx-ehci: Ralink EHCI Host Controller
+</span></span></span><span class=line><span class=cl><span class=s1>rt3xxx-ehci rt3xxx-ehci: new USB bus registered, assigned bus number 1
+</span></span></span><span class=line><span class=cl><span class=s1>rt3xxx-ehci rt3xxx-ehci: irq 18, io mem 0x101c0000
+</span></span></span><span class=line><span class=cl><span class=s1>rt3xxx-ehci rt3xxx-ehci: USB 0.0 started, EHCI 1.00
+</span></span></span><span class=line><span class=cl><span class=s1>hub 1-0:1.0: USB hub found
+</span></span></span><span class=line><span class=cl><span class=s1>hub 1-0:1.0: 1 port detected
+</span></span></span><span class=line><span class=cl><span class=s1>ohci_hcd: USB 1.1 &#39;</span>Open<span class=s1>&#39; Host Controller (OHCI) Driver
+</span></span></span><span class=line><span class=cl><span class=s1>rt3xxx-ohci rt3xxx-ohci: RT3xxx OHCI Controller
+</span></span></span><span class=line><span class=cl><span class=s1>rt3xxx-ohci rt3xxx-ohci: new USB bus registered, assigned bus number 2
+</span></span></span><span class=line><span class=cl><span class=s1>rt3xxx-ohci rt3xxx-ohci: irq 18, io mem 0x101c1000
+</span></span></span><span class=line><span class=cl><span class=s1>hub 2-0:1.0: USB hub found
+</span></span></span><span class=line><span class=cl><span class=s1>hub 2-0:1.0: 1 port detected
+</span></span></span><span class=line><span class=cl><span class=s1>usbcore: registered new interface driver cdc_acm
+</span></span></span><span class=line><span class=cl><span class=s1>cdc_acm: v0.26:USB Abstract Control Model driver for USB modems and ISDN adapters
+</span></span></span><span class=line><span class=cl><span class=s1>Initializing USB Mass Storage driver...
+</span></span></span><span class=line><span class=cl><span class=s1>usbcore: registered new interface driver usb-storage
+</span></span></span><span class=line><span class=cl><span class=s1>USB Mass Storage support registered.
+</span></span></span><span class=line><span class=cl><span class=s1>MTK MSDC device init.
+</span></span></span><span class=line><span class=cl><span class=s1>msdc0 -&gt; ops_get_cd return&lt;0&gt; &lt;- msdc_ops_get_cd() : L&lt;2317&gt; PID&lt;kworker/u:1&gt;&lt;0x1a&gt;
+</span></span></span><span class=line><span class=cl><span class=s1>mtk-sd: MediaTek MT6575 MSDC Driver
+</span></span></span><span class=line><span class=cl><span class=s1>GACT probability on
+</span></span></span><span class=line><span class=cl><span class=s1>Mirror/redirect action on
+</span></span></span><span class=line><span class=cl><span class=s1>Simple TC action Loaded
+</span></span></span><span class=line><span class=cl><span class=s1>netem: version 1.2
+</span></span></span><span class=line><span class=cl><span class=s1>u32 classifier
+</span></span></span><span class=line><span class=cl><span class=s1>    Performance counters on
+</span></span></span><span class=line><span class=cl><span class=s1>    input device check on
+</span></span></span><span class=line><span class=cl><span class=s1>    Actions configured
+</span></span></span><span class=line><span class=cl><span class=s1>Netfilter messages via NETLINK v0.30.
+</span></span></span><span class=line><span class=cl><span class=s1>nf_conntrack version 0.5.0 (846 buckets, 3384 max)
+</span></span></span><span class=line><span class=cl><span class=s1>ctnetlink v0.93: registering with nfnetlink.
+</span></span></span><span class=line><span class=cl><span class=s1>nf_conntrack_rtsp v0.6.21 loading
+</span></span></span><span class=line><span class=cl><span class=s1>matchsize=264
+</span></span></span><span class=line><span class=cl><span class=s1>xt_time: kernel timezone is -0000
+</span></span></span><span class=line><span class=cl><span class=s1>IPVS: Registered protocols ()
+</span></span></span><span class=line><span class=cl><span class=s1>IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+</span></span></span><span class=line><span class=cl><span class=s1>IPVS: ipvs loaded.
+</span></span></span><span class=line><span class=cl><span class=s1>GRE over IPv4 demultiplexor driver
+</span></span></span><span class=line><span class=cl><span class=s1>gre: can&#39;</span>t add protocol
+</span></span><span class=line><span class=cl>nf_nat_rtsp v0.6.21 loading
+</span></span><span class=line><span class=cl>ip_tables: <span class=o>(</span>C<span class=o>)</span> 2000-2006 Netfilter Core Team, <span class=nv>Type</span><span class=o>=</span>Restricted Cone
+</span></span><span class=line><span class=cl>arp_tables: <span class=o>(</span>C<span class=o>)</span> <span class=m>2002</span> David S. Miller
+</span></span><span class=line><span class=cl>TCP cubic registered
+</span></span><span class=line><span class=cl>NET: Registered protocol family <span class=m>10</span>
+</span></span><span class=line><span class=cl>NET: Registered protocol family <span class=m>17</span>
+</span></span><span class=line><span class=cl>Bridge firewalling registered
+</span></span><span class=line><span class=cl>L2TP core driver, V2.0
+</span></span><span class=line><span class=cl>PPPoL2TP kernel driver, V2.0
+</span></span><span class=line><span class=cl>802.1Q VLAN Support v1.8 Ben Greear &lt;greearb@candelatech.com&gt;
+</span></span><span class=line><span class=cl>All bugs added by David S. Miller &lt;davem@redhat.com&gt;
+</span></span><span class=line><span class=cl>Warning: unable to open an initial console.
+</span></span><span class=line><span class=cl>Freeing unused kernel memory: 4288k freed
+</span></span><span class=line><span class=cl>Algorithmics/MIPS FPU Emulator v1.5
+</span></span><span class=line><span class=cl>Welcome to
+</span></span><span class=line><span class=cl>     __   ___  _____  _____   _  _______ ______  _____  _   ___
+</span></span><span class=line><span class=cl>    <span class=p>|</span>  <span class=se>\ </span>/   <span class=o>||</span>  ___<span class=o>||</span>  __ <span class=se>\ </span><span class=p>|</span> <span class=o>||</span>  __  <span class=o>||</span>__  __<span class=o>||</span>  ___<span class=o>||</span> <span class=p>|</span> /  /
+</span></span><span class=line><span class=cl>    <span class=p>|</span>   ^    <span class=o>||</span> <span class=p>|</span>__  <span class=p>|</span> <span class=p>|</span>  <span class=se>\ \|</span> <span class=o>||</span> <span class=p>|</span>  <span class=p>|</span> <span class=p>|</span>  <span class=p>|</span> <span class=p>|</span>   <span class=p>|</span> <span class=p>|</span>__  <span class=p>|</span> <span class=p>|</span>/  /
+</span></span><span class=line><span class=cl>    <span class=p>|</span>  <span class=p>|</span> <span class=p>|</span>   <span class=o>||</span>  ___<span class=o>||</span> <span class=p>|</span>  <span class=p>|</span> <span class=o>||</span> <span class=o>||</span> <span class=p>|</span>__<span class=p>|</span> <span class=p>|</span>  <span class=p>|</span> <span class=p>|</span>   <span class=p>|</span>  ___<span class=o>||</span>    <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>    <span class=p>|</span>  <span class=p>|</span> <span class=p>|</span>   <span class=o>||</span> <span class=p>|</span>___ <span class=p>|</span> <span class=p>|</span>__/ /<span class=p>|</span> <span class=o>||</span>  __  <span class=p>|</span>  <span class=p>|</span> <span class=p>|</span>   <span class=p>|</span> <span class=p>|</span>___ <span class=p>|</span> <span class=p>|</span><span class=se>\ </span> <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>    <span class=p>|</span>__<span class=p>|</span> <span class=p>|</span>___<span class=o>||</span>_____<span class=o>||</span>_____/ <span class=p>|</span>_<span class=o>||</span>_<span class=p>|</span>  <span class=p>|</span>_<span class=p>|</span>  <span class=p>|</span>_<span class=p>|</span>   <span class=p>|</span>_____<span class=o>||</span>_<span class=p>|</span> <span class=se>\_</span>_<span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>
+</span></span><span class=line><span class=cl>		        <span class=o>=</span> Everyday <span class=nv>Genius</span> <span class=o>=</span>
+</span></span><span class=line><span class=cl>		            
+</span></span><span class=line><span class=cl>GobiNet: 2011-07-29-1026
+</span></span><span class=line><span class=cl>usbcore: registered new interface driver GobiNet
+</span></span><span class=line><span class=cl><span class=o>[</span>CC<span class=o>]</span> <span class=o>[</span>12<span class=o>]</span> init daemon...
+</span></span><span class=line><span class=cl>cat: can<span class=s1>&#39;t open &#39;</span>/var/run/LteManager.status<span class=s1>&#39;: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>Password for &#39;</span>admin<span class=s1>&#39; changed
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>##### disable 1st wireless interface #####
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>##### disable 2nd wireless interface #####
+</span></span></span><span class=line><span class=cl><span class=s1>rmmod: rlt_wifi: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>insmod: rlt_wifi.ko: module not found
+</span></span></span><span class=line><span class=cl><span class=s1>cat: can&#39;</span>t open <span class=s1>&#39;/var/run/LteManager.status&#39;</span>: No such file or directory
+</span></span><span class=line><span class=cl>RX<span class=o>[</span>0<span class=o>]</span> DESC a21ec000 <span class=nv>size</span> <span class=o>=</span> <span class=m>4096</span>
+</span></span><span class=line><span class=cl>RX<span class=o>[</span>1<span class=o>]</span> DESC a21ed000 <span class=nv>size</span> <span class=o>=</span> <span class=m>4096</span>
+</span></span><span class=line><span class=cl><span class=nv>E2pAccessMode</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=nv>cfg_mode</span><span class=o>=</span><span class=m>9</span>
+</span></span><span class=line><span class=cl><span class=nv>cfg_mode</span><span class=o>=</span><span class=m>9</span>
+</span></span><span class=line><span class=cl>wmode_band_equal<span class=o>()</span>: Band Equal!
+</span></span><span class=line><span class=cl>1. Phy <span class=nv>Mode</span> <span class=o>=</span> <span class=m>14</span>
+</span></span><span class=line><span class=cl>Country Region from <span class=nv>e2p</span> <span class=o>=</span> ffff
+</span></span><span class=line><span class=cl>2. Phy <span class=nv>Mode</span> <span class=o>=</span> <span class=m>14</span>
+</span></span><span class=line><span class=cl>3. Phy <span class=nv>Mode</span> <span class=o>=</span> <span class=m>14</span>
+</span></span><span class=line><span class=cl>AntCfgInit: primary/secondary ant 0/1
+</span></span><span class=line><span class=cl>Current Temperature from <span class=nv>BBP_R49</span><span class=o>=</span>0xfffffff8
+</span></span><span class=line><span class=cl>RT6352_TssiTableAdjust: <span class=nv>upper_bound</span> <span class=o>=</span> 0x7F decimal: <span class=m>127</span>
+</span></span><span class=line><span class=cl>RT6352_TssiTableAdjust: <span class=nv>lower_bound</span> <span class=o>=</span> 0xFFFFFF80 decimal: -128
+</span></span><span class=line><span class=cl>*** RT6352_TssiTableAdjust: G Tssi<span class=o>[</span>-7 .. +7<span class=o>]</span> <span class=o>=</span> -128 -1 -1 -1 -128 -1 -1
+</span></span><span class=line><span class=cl> - -1 - -1 -1 -1 -1 -1 -1 -1, <span class=nv>offset</span><span class=o>=</span>-9, <span class=nv>tuning</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl>RT6352_TssiTableAdjust: G Tssi<span class=o>[</span>-7 .. +7<span class=o>]</span> <span class=o>=</span> -128 -10 -10 -10 -128 -10 -10 - -10 - -10 -10 -10 -10 -10 -10 -10, <span class=nv>offset</span><span class=o>=</span>-9, <span class=nv>tuning</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=nv>mp_temperature</span><span class=o>=</span>0x00, <span class=nv>step</span> <span class=o>=</span> +7
+</span></span><span class=line><span class=cl>E2PROM: G Tssi<span class=o>[</span>-7 .. +7<span class=o>]</span> <span class=o>=</span> -128 -10 -10 -10 -128 -10 -10 - -10 - -10 -10 -10 -10 -10 -10 -10, <span class=nv>offset</span><span class=o>=</span>-9, <span class=nv>tuning</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl>ChipStructAssign<span class=o>()</span>: RALINK6352 hook !
+</span></span><span class=line><span class=cl><span class=nv>bAutoTxAgcG</span> <span class=o>=</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl>MCS <span class=nv>Set</span> <span class=o>=</span> ff ff <span class=m>00</span> <span class=m>00</span> <span class=m>01</span>
+</span></span><span class=line><span class=cl>APStartUp<span class=o>()</span>: AP Set CentralFreq at 7<span class=o>(</span><span class=nv>Prim</span><span class=o>=</span>9, HT-CentCh<span class=o>=</span>7, VHT-CentCh<span class=o>=</span>0, <span class=nv>BBP_BW</span><span class=o>=</span>1<span class=o>)</span>
+</span></span><span class=line><span class=cl>Main <span class=nv>bssid</span> <span class=o>=</span> e8:d1:1b:07:5a:7b
+</span></span><span class=line><span class=cl>&lt;<span class=o>====</span> rt28xx_init, <span class=nv>Status</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 0, <span class=nv>dev_name_prefix</span><span class=o>=</span>wds
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 0, <span class=nv>dev_name_prefix</span><span class=o>=</span>wds
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 0, <span class=nv>dev_name_prefix</span><span class=o>=</span>wds
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 0, <span class=nv>dev_name_prefix</span><span class=o>=</span>wds
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 0, <span class=nv>dev_name_prefix</span><span class=o>=</span>apcli
+</span></span><span class=line><span class=cl>RTMPDrvOpen<span class=o>(</span>1<span class=o>)</span>:Check <span class=k>if</span> PDMA is idle!
+</span></span><span class=line><span class=cl>RTMPDrvOpen<span class=o>(</span>2<span class=o>)</span>:Check <span class=k>if</span> PDMA is idle!
+</span></span><span class=line><span class=cl>build <span class=nb>time</span> <span class=o>=</span> 
+</span></span><span class=line><span class=cl>20141115060606a
+</span></span><span class=line><span class=cl>rom patch <span class=k>for</span> E3 IC
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>platform</span> <span class=o>=</span> 
+</span></span><span class=line><span class=cl>ALPS
+</span></span><span class=line><span class=cl>hw/sw <span class=nv>version</span> <span class=o>=</span> 
+</span></span><span class=line><span class=cl>��
+</span></span><span class=line><span class=cl>patch <span class=nv>version</span> <span class=o>=</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>FW Version:0.0.00 Build:1
+</span></span><span class=line><span class=cl>Build Time:201507311614____
+</span></span><span class=line><span class=cl>fw <span class=k>for</span> E3 IC
+</span></span><span class=line><span class=cl>RX<span class=o>[</span>0<span class=o>]</span> DESC a278b000 <span class=nv>size</span> <span class=o>=</span> <span class=m>4096</span>
+</span></span><span class=line><span class=cl>RX<span class=o>[</span>1<span class=o>]</span> DESC a278c000 <span class=nv>size</span> <span class=o>=</span> <span class=m>4096</span>
+</span></span><span class=line><span class=cl><span class=nv>E2pAccessMode</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=nv>cfg_mode</span><span class=o>=</span><span class=m>14</span>
+</span></span><span class=line><span class=cl><span class=nv>cfg_mode</span><span class=o>=</span><span class=m>14</span>
+</span></span><span class=line><span class=cl>wmode_band_equal<span class=o>()</span>: Band Not Equal!
+</span></span><span class=line><span class=cl>1. Phy <span class=nv>Mode</span> <span class=o>=</span> <span class=m>49</span>
+</span></span><span class=line><span class=cl>drivers/net/wireless/rlt_wifi_ap/../rlt_wifi_p1/chips/mt76x2.c:2844 assert <span class=o>(</span>ad-&gt;TxPower<span class=o>[</span>choffset<span class=o>]</span>.Channel <span class=o>==</span> 42<span class=o>)</span>failed
+</span></span><span class=line><span class=cl>Country Region from <span class=nv>e2p</span> <span class=o>=</span> ffff
+</span></span><span class=line><span class=cl>2. Phy <span class=nv>Mode</span> <span class=o>=</span> <span class=m>49</span>
+</span></span><span class=line><span class=cl>3. Phy <span class=nv>Mode</span> <span class=o>=</span> <span class=m>49</span>
+</span></span><span class=line><span class=cl>andes_pci_fw_init
+</span></span><span class=line><span class=cl><span class=nv>0x1300</span> <span class=o>=</span> <span class=m>00073200</span>
+</span></span><span class=line><span class=cl>AntCfgInit: primary/secondary ant 0/1
+</span></span><span class=line><span class=cl>andes_load_cr:cr_type<span class=o>(</span>2<span class=o>)</span>
+</span></span><span class=line><span class=cl>ChipStructAssign<span class=o>()</span>: MT76x2 hook !
+</span></span><span class=line><span class=cl><span class=nv>bAutoTxAgcG</span> <span class=o>=</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl>MCS <span class=nv>Set</span> <span class=o>=</span> ff ff <span class=m>00</span> <span class=m>00</span> <span class=m>01</span>
+</span></span><span class=line><span class=cl>mt76x2_bbp_adjust<span class=o>()</span>:rf_bw<span class=o>=</span>2, <span class=nv>ext_ch</span><span class=o>=</span>1, <span class=nv>PrimCh</span><span class=o>=</span>157, HT-CentCh<span class=o>=</span>159, VHT-CentCh<span class=o>=</span><span class=m>155</span>
+</span></span><span class=line><span class=cl>TX0 power <span class=nv>compensation</span> <span class=o>=</span> 0x38
+</span></span><span class=line><span class=cl>TX1 power <span class=nv>compensation</span> <span class=o>=</span> 0x38
+</span></span><span class=line><span class=cl>APStartUp<span class=o>()</span>: AP Set CentralFreq at 155<span class=o>(</span><span class=nv>Prim</span><span class=o>=</span>157, HT-CentCh<span class=o>=</span>159, VHT-CentCh<span class=o>=</span>155, <span class=nv>BBP_BW</span><span class=o>=</span>2<span class=o>)</span>
+</span></span><span class=line><span class=cl>mt76x2_calibration<span class=o>(</span><span class=nv>channel</span> <span class=o>=</span> 155<span class=o>)</span>
+</span></span><span class=line><span class=cl>Main <span class=nv>bssid</span> <span class=o>=</span> e8:d1:1b:07:5a:7c
+</span></span><span class=line><span class=cl>mt76x2_reinit_agc_gain:original <span class=nv>agc_vga0</span> <span class=o>=</span> 0x5c, <span class=nv>agc_vga1</span> <span class=o>=</span> 0x5c
+</span></span><span class=line><span class=cl>mt76x2_reinit_agc_gain:updated <span class=nv>agc_vga0</span> <span class=o>=</span> 0x5c, <span class=nv>agc_vga1</span> <span class=o>=</span> 0x5c
+</span></span><span class=line><span class=cl>mt76x2_reinit_hi_lna_gain:original <span class=nv>hi_lna0</span> <span class=o>=</span> 0x27, <span class=nv>hi_lna1</span> <span class=o>=</span> 0x27
+</span></span><span class=line><span class=cl>mt76x2_reinit_hi_lna_gain:updated <span class=nv>hi_lna0</span> <span class=o>=</span> 0x27, <span class=nv>hi_lna1</span> <span class=o>=</span> 0x27
+</span></span><span class=line><span class=cl>original vga value<span class=o>(</span>chain0<span class=o>)</span> <span class=o>=</span> 5c
+</span></span><span class=line><span class=cl>original vga value<span class=o>(</span>chain1<span class=o>)</span> <span class=o>=</span> 5c
+</span></span><span class=line><span class=cl>&lt;<span class=o>====</span> rt28xx_init, <span class=nv>Status</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 1, <span class=nv>dev_name_prefix</span><span class=o>=</span>wdsi
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 1, <span class=nv>dev_name_prefix</span><span class=o>=</span>wdsi
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 1, <span class=nv>dev_name_prefix</span><span class=o>=</span>wdsi
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 1, <span class=nv>dev_name_prefix</span><span class=o>=</span>wdsi
+</span></span><span class=line><span class=cl>get_dev_name_prefix<span class=o>()</span>: <span class=nv>dev_idx</span> <span class=o>=</span> 1, <span class=nv>dev_name_prefix</span><span class=o>=</span>apclii
+</span></span><span class=line><span class=cl>RTMPDrvOpen<span class=o>(</span>1<span class=o>)</span>:Check <span class=k>if</span> PDMA is idle!
+</span></span><span class=line><span class=cl>RTMPDrvOpen<span class=o>(</span>2<span class=o>)</span>:Check <span class=k>if</span> PDMA is idle!
+</span></span><span class=line><span class=cl>ifconfig: ioctl 0x8913 failed: No such device
+</span></span><span class=line><span class=cl>brctl: bridge br0: No such device or address
+</span></span><span class=line><span class=cl><span class=c1>##### configVIF #####</span>
+</span></span><span class=line><span class=cl>Raeth v3.1 <span class=o>(</span>Tasklet<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>phy_tx_ring</span> <span class=o>=</span> 0x014d2000, <span class=nv>tx_ring</span> <span class=o>=</span> 0xa14d2000
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>phy_rx_ring0</span> <span class=o>=</span> 0x014d3000, <span class=nv>rx_ring0</span> <span class=o>=</span> 0xa14d3000
+</span></span><span class=line><span class=cl>SMACCR1 -- : 0x0000e8d1
+</span></span><span class=line><span class=cl>SMACCR0 -- : 0x1b075a79
+</span></span><span class=line><span class=cl><span class=nv>CDMA_CSG_CFG</span> <span class=o>=</span> <span class=m>81000000</span>
+</span></span><span class=line><span class=cl><span class=nv>GDMA1_FWD_CFG</span> <span class=o>=</span> <span class=m>20710000</span>
+</span></span><span class=line><span class=cl>vconfig: ioctl error <span class=k>for</span> rem: No such device
+</span></span><span class=line><span class=cl>vconfig: ioctl error <span class=k>for</span> rem: No such device
+</span></span><span class=line><span class=cl>rmmod: 8021q: No such file or directory
+</span></span><span class=line><span class=cl>device eth2 entered promiscuous mode
+</span></span><span class=line><span class=cl><span class=c1>##### config Ralink ESW vlan partition (LLLLW) #####</span>
+</span></span><span class=line><span class=cl>usb 1-1: new high speed USB device using rt3xxx-ehci and address <span class=m>2</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2004, <span class=nv>value</span><span class=o>=</span>ff0003
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2104, <span class=nv>value</span><span class=o>=</span>ff0003
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2204, <span class=nv>value</span><span class=o>=</span>ff0003
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2304, <span class=nv>value</span><span class=o>=</span>ff0003
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2404, <span class=nv>value</span><span class=o>=</span>ff0003
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2504, <span class=nv>value</span><span class=o>=</span>ff0003
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2010, <span class=nv>value</span><span class=o>=</span>810000c0
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2110, <span class=nv>value</span><span class=o>=</span>810000c0
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2210, <span class=nv>value</span><span class=o>=</span>810000c0
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2310, <span class=nv>value</span><span class=o>=</span>810000c0
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2410, <span class=nv>value</span><span class=o>=</span>810000c0
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2510, <span class=nv>value</span><span class=o>=</span>810000c0
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2610, <span class=nv>value</span><span class=o>=</span><span class=m>81000000</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2710, <span class=nv>value</span><span class=o>=</span><span class=m>81000000</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2604, <span class=nv>value</span><span class=o>=</span>20ff0003
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2704, <span class=nv>value</span><span class=o>=</span>20ff0003
+</span></span><span class=line><span class=cl>Special Tag Disabled
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2610, <span class=nv>value</span><span class=o>=</span><span class=m>81000000</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2014, <span class=nv>value</span><span class=o>=</span><span class=m>10001</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2114, <span class=nv>value</span><span class=o>=</span><span class=m>10001</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2214, valucdc_acm 1-1:1.2: This device cannot <span class=k>do</span> calls on its own. It is not a modem.
+</span></span><span class=line><span class=cl><span class=nv>e</span><span class=o>=</span><span class=m>10001</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2314, <span class=nv>value</span><span class=o>=</span><span class=m>10001</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2414cdc_acm 1-1:1.2: ttyACM0: USB ACM device
+</span></span><span class=line><span class=cl>, <span class=nv>value</span><span class=o>=</span><span class=m>10002</span>
+</span></span><span class=line><span class=cl>switch reg write <span class=nv>offset</span><span class=o>=</span>2514, <span class=nv>value</span><span class=o>=</span><span class=m>10001</span>
+</span></span><span class=line><span class=cl>REG_ESW_WT_MAC_ATC is 0x7ff0002
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>done</span>.
+</span></span><span class=line><span class=cl>cdc_acm 1-1:1.4: This device cannot <span class=k>do</span> calls on its own. It is not a modem.
+</span></span><span class=line><span class=cl>cdc_acm 1-1:1.4: ttyACM1: USB ACM device
+</span></span><span class=line><span class=cl>GobiNet 1-1:1.6: usb0: register <span class=s1>&#39;GobiNet&#39;</span> at usb-rt3xxx-1, GobiNet Ethernet Device, e2:d4:81:3d:2f:ff
+</span></span><span class=line><span class=cl>device ra0 entered promiscuous mode
+</span></span><span class=line><span class=cl>device eth2.1 entered promiscuous mode
+</span></span><span class=line><span class=cl>device rai0 entered promiscuous mode
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>##### enable 2nd wireless interface #####</span>
+</span></span><span class=line><span class=cl>cat: can<span class=s1>&#39;t open &#39;</span>/var/run/LteManager.status<span class=s1>&#39;: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>lted.sh (at+cmd) run ...
+</span></span></span><span class=line><span class=cl><span class=s1>cat: can&#39;</span>t open <span class=s1>&#39;/var/run/LteManager.status&#39;</span>: No such file or directory
+</span></span><span class=line><span class=cl>cat: can<span class=s1>&#39;t open &#39;</span>/var/run/LteManager.status<span class=s1>&#39;: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>data=[ up lted.sh set_lte_led]
+</span></span></span><span class=line><span class=cl><span class=s1>del_reg():/var/run/.ip_up.reg, lted.sh set_lte_led
+</span></span></span><span class=line><span class=cl><span class=s1>br0: port 3(rai0) entering listening state
+</span></span></span><span class=line><span class=cl><span class=s1>br0: port 3(rai0) entering listening state
+</span></span></span><span class=line><span class=cl><span class=s1>br0: port 2(eth2.1) entering listening state
+</span></span></span><span class=line><span class=cl><span class=s1>br0: port 2(eth2.1) entering listening state
+</span></span></span><span class=line><span class=cl><span class=s1>br0: port 1(ra0) entering listening state
+</span></span></span><span class=line><span class=cl><span class=s1>br0: port 1(ra0) entering listening state
+</span></span></span><span class=line><span class=cl><span class=s1>add_reg():/var/run/.ip_up.reg, lted.sh set_lte_led
+</span></span></span><span class=line><span class=cl><span class=s1>ifconfig: ioctl 0x8914 failed: Cannot assign requested address
+</span></span></span><span class=line><span class=cl><span class=s1>ifconfig: ioctl 0x8914 failed: Cannot assign requested address
+</span></span></span><span class=line><span class=cl><span class=s1>cat: can&#39;</span>t open <span class=s1>&#39;/var/run/LteManager.status&#39;</span>: No such file or directory
+</span></span><span class=line><span class=cl>cat: can<span class=s1>&#39;t open &#39;</span>/var/run/LteManager.status<span class=s1>&#39;: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>route: ioctl 0x890c failed: No such process
+</span></span></span><span class=line><span class=cl><span class=s1>killall: rt2860apd: no process killed
+</span></span></span><span class=line><span class=cl><span class=s1>route: ioctl 0x890c failed: No such process
+</span></span></span><span class=line><span class=cl><span class=s1>killall: rtinicapd: no process killed
+</span></span></span><span class=line><span class=cl><span class=s1>killall: wapid: no process killed
+</span></span></span><span class=line><span class=cl><span class=s1>iptables v1.4.10: Couldn&#39;</span>t load target <span class=sb>`</span>firewall<span class=s1>&#39;:File not found
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Try `iptables -h&#39;</span> or <span class=s1>&#39;iptables --help&#39;</span> <span class=k>for</span> more information.
+</span></span><span class=line><span class=cl>Mason : *pbLinkState <span class=o>=</span> <span class=nb>false</span> <span class=o>(</span>17:30:24<span class=o>)</span>
+</span></span><span class=line><span class=cl> Type 0x10 : <span class=nv>result</span><span class=o>=</span><span class=m>65494</span> callendreason<span class=o>[</span>0<span class=o>]=</span><span class=m>36</span> callendreason<span class=o>[</span>1<span class=o>]=</span><span class=m>101</span>
+</span></span><span class=line><span class=cl>Type 0x11 : <span class=nv>result</span><span class=o>=</span><span class=m>65494</span> callendreasontype<span class=o>[</span>0<span class=o>]=</span><span class=m>0</span> callendreasontype<span class=o>[</span>1<span class=o>]=</span><span class=m>0</span> callendreasontype<span class=o>[</span>2<span class=o>]=</span><span class=m>0</span> callendreasontype<span class=o>[</span>3<span class=o>]=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl>iptables: No chain/target/match by that name.
+</span></span><span class=line><span class=cl>iptables v1.4.10: Couldn<span class=s1>&#39;t load target `firewall_input&#39;</span>:File not found
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Try <span class=sb>`</span>iptables -h<span class=s1>&#39; or &#39;</span>iptables --help<span class=s1>&#39; for more information.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables: No chain/target/match by that name.
+</span></span></span><span class=line><span class=cl><span class=s1>creating qcqmi0
+</span></span></span><span class=line><span class=cl><span class=s1>++ /sbin/automount_lte.sh: qcqmi0, qcqmi0, add, 
+</span></span></span><span class=line><span class=cl><span class=s1>=====================
+</span></span></span><span class=line><span class=cl><span class=s1>usb device: usbdev1.2
+</span></span></span><span class=line><span class=cl><span class=s1>path: 
+</span></span></span><span class=line><span class=cl><span class=s1>vendor: 05c6
+</span></span></span><span class=line><span class=cl><span class=s1>product: 9026
+</span></span></span><span class=line><span class=cl><span class=s1>manufacturer: Askey LTE module
+</span></span></span><span class=line><span class=cl><span class=s1>iptables v1.4.10: Couldn&#39;</span>t load target <span class=sb>`</span>mac_filter<span class=s1>&#39;:File not found
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Try `iptables -h&#39;</span> or <span class=s1>&#39;iptables --help&#39;</span> <span class=k>for</span> more information.
+</span></span><span class=line><span class=cl>iptables: No chain/target/match by that name.
+</span></span><span class=line><span class=cl>iptables v1.4.10: Couldn<span class=s1>&#39;t load target `ipport_filter&#39;</span>:File not found
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Try <span class=sb>`</span>iptables -h<span class=s1>&#39; or &#39;</span>iptables --help<span class=s1>&#39; for more information.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables: No chain/target/match by that name.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables v1.4.10: Couldn&#39;</span>t load target <span class=sb>`</span>web_filter<span class=s1>&#39;:File not found
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Try `iptables -h&#39;</span> or <span class=s1>&#39;iptables --help&#39;</span> <span class=k>for</span> more information.
+</span></span><span class=line><span class=cl>iptables: No chain/target/match by that name.
+</span></span><span class=line><span class=cl>iptables v1.4.10: Couldn<span class=s1>&#39;t load target `malicious_filter&#39;</span>:File not found
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Try <span class=sb>`</span>iptables -h<span class=s1>&#39; or &#39;</span>iptables --help<span class=s1>&#39; for more information.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables: No chain/target/match by that name.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables v1.4.10: Couldn&#39;</span>t load target <span class=sb>`</span>malicious_input_filter<span class=s1>&#39;:File not found
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Try `iptables -h&#39;</span> or <span class=s1>&#39;iptables --help&#39;</span> <span class=k>for</span> more information.
+</span></span><span class=line><span class=cl>iptables: No chain/target/match by that name.
+</span></span><span class=line><span class=cl>iptables v1.4.10: Couldn<span class=s1>&#39;t load target `port_trigger&#39;</span>:File not found
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Try <span class=sb>`</span>iptables -h<span class=s1>&#39; or &#39;</span>iptables --help<span class=s1>&#39; for more information.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables: No chain/target/match by that name.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables v1.4.10: Couldn&#39;</span>t load target <span class=sb>`</span>trigger_prerouting<span class=s1>&#39;:File not found
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Try `iptables -h&#39;</span> or <span class=s1>&#39;iptables --help&#39;</span> <span class=k>for</span> more information.
+</span></span><span class=line><span class=cl>iptables: No chain/target/match by that name.
+</span></span><span class=line><span class=cl>cat: can<span class=s1>&#39;t open &#39;</span>/var/run/LteManager.status<span class=s1>&#39;: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>firewall.c:iptablesIPPortFilterRun:529:Warning: can&#39;</span>t find <span class=s2>&#34;IPPortFilterRules&#34;</span> in flash.
+</span></span><span class=line><span class=cl>firewall.c:iptablesMACFilterRun:449:Warning: can<span class=s1>&#39;t find &#34;MacFilteringRules&#34; in flash.
+</span></span></span><span class=line><span class=cl><span class=s1>cat: can&#39;</span>t open <span class=s1>&#39;/var/run/LteManager.status&#39;</span>: No such file or directory
+</span></span><span class=line><span class=cl>cat: can<span class=s1>&#39;t open &#39;</span>/var/run/LteManager.status<span class=s1>&#39;: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>cat: can&#39;</span>t open <span class=s1>&#39;/var/run/LteManager.status&#39;</span>: No such file or directory
+</span></span><span class=line><span class=cl>sh: /bin/super_dmz: not found
+</span></span><span class=line><span class=cl>iptables v1.4.10: Couldn<span class=s1>&#39;t load target `port_forward&#39;</span>:File not found
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Try <span class=sb>`</span>iptables -h<span class=s1>&#39; or &#39;</span>iptables --help<span class=s1>&#39; for more information.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables: No chain/target/match by that name.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables: No chain/target/match by that name.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables v1.4.10: Couldn&#39;</span>t load target <span class=sb>`</span>port_forward<span class=s1>&#39;:File not found
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Try `iptables -h&#39;</span> or <span class=s1>&#39;iptables --help&#39;</span> <span class=k>for</span> more information.
+</span></span><span class=line><span class=cl>iptables: No chain/target/match by that name.
+</span></span><span class=line><span class=cl>iptables: No chain/target/match by that name.
+</span></span><span class=line><span class=cl>iptables v1.4.10: Couldn<span class=s1>&#39;t load target `MINIUPNPD&#39;</span>:File not found
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Try <span class=sb>`</span>iptables -h<span class=s1>&#39; or &#39;</span>iptables --help<span class=s1>&#39; for more information.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables v1.4.10: Couldn&#39;</span>t load target <span class=sb>`</span>DMZ<span class=s1>&#39;:File not found
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Try `iptables -h&#39;</span> or <span class=s1>&#39;iptables --help&#39;</span> <span class=k>for</span> more information.
+</span></span><span class=line><span class=cl>iptables: No chain/target/match by that name.
+</span></span><span class=line><span class=cl>iptables v1.4.10: Couldn<span class=s1>&#39;t load target `vpn_passthrough&#39;</span>:File not found
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Try <span class=sb>`</span>iptables -h<span class=s1>&#39; or &#39;</span>iptables --help<span class=s1>&#39; for more information.
+</span></span></span><span class=line><span class=cl><span class=s1>iptables: No chain/target/match by that name.
+</span></span></span><span class=line><span class=cl><span class=s1>30
+</span></span></span><span class=line><span class=cl><span class=s1>0
+</span></span></span><span class=line><span class=cl><span class=s1>180
+</span></span></span><span class=line><span class=cl><span class=s1>0
+</span></span></span><span class=line><span class=cl><span class=s1>HTTP/1.0 302 Redirect
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Pragma: no-cache
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Cache-Control: no-cache
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Content-Type: text/html
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Location: (null)
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>my.pool.ntp.org: Unknown host
+</span></span></span><span class=line><span class=cl><span class=s1>syslogd: illegal option -- C
+</span></span></span><span class=line><span class=cl><span class=s1>BusyBox v1.12.1 (2017-10-16 17:28:06 CST) multi-call binary
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Usage: syslogd [OPTION]...
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>cat: can&#39;</span>t open <span class=s1>&#39;/var/run/LteManager.status&#39;</span>: No such file or directory
+</span></span><span class=line><span class=cl>get_ipaddr: ioctl SIOCGIFADDR error <span class=k>for</span> usb0
+</span></span><span class=line><span class=cl>internet.c:ripd_restart:435:The WAN IP is still undeterminated...
+</span></span><span class=line><span class=cl>cat: can<span class=s1>&#39;t open &#39;</span>/var/run/LteManager.status<span class=s1>&#39;: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>0
+</span></span></span><span class=line><span class=cl><span class=s1>HTTP/1.0 302 Redirect
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Pragma: no-cache
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Cache-Control: no-cache
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Content-Type: text/html
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>Location: (null)
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>
+</span></span></span><span class=line><span class=cl><span class=s1>cat: can&#39;</span>t open <span class=s1>&#39;/var/run/LteManager.status&#39;</span>: No such file or directory
+</span></span><span class=line><span class=cl>Power LED On <span class=m>33</span> 
+</span></span><span class=line><span class=cl><span class=nv>data</span><span class=o>=[</span> up start_voip.sh<span class=o>]</span>
+</span></span><span class=line><span class=cl><span class=o>[</span>auto fota<span class=o>]</span> Start session connection after <span class=m>4267</span> seconds
+</span></span><span class=line><span class=cl>del_reg<span class=o>()</span>:/var/run/.port_up.reg, start_voip.sh
+</span></span><span class=line><span class=cl>cat: can<span class=s1>&#39;t open &#39;</span>/var/run/LteManager.status<span class=s1>&#39;: No such file or directory
+</span></span></span><span class=line><span class=cl><span class=s1>init: can&#39;</span>t log to /dev/tty5
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>starting pid 4531, tty <span class=s1>&#39;/dev/ttyS1&#39;</span>: <span class=s1>&#39;/sbin/getty 57600 ttyS1&#39;</span>
+</span></span><span class=line><span class=cl>no
+</span></span><span class=line><span class=cl>osal_kernel: module license <span class=s1>&#39;D2 Technologies, Inc. Proprietary Software&#39;</span> taints kernel.
+</span></span><span class=line><span class=cl>Disabling lock debugging due to kernel taint
+</span></span><span class=line><span class=cl><span class=o>[</span>KEYMGR<span class=o>]</span> Starting...
+</span></span><span class=line><span class=cl>osal_module.c:39 OSAL module_init OK
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>lkm.c 178: devname /dev/d2vtspr
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>/dev/d2vtspr registered successfuly @ 249.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>ralink login: 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>========</span>
+</span></span><span class=line><span class=cl>vPort Release +D2Tech+ VPORT  <span class=nv>WANG2_R_1_6_11</span> 
+</span></span><span class=line><span class=cl><span class=o>========</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>               D2 Technologies
+</span></span><span class=line><span class=cl>      _   _  __                           
+</span></span><span class=line><span class=cl>     / <span class=p>|</span> <span class=s1>&#39;/  /_  _  /_ _  _  /_  _  ._   _
+</span></span></span><span class=line><span class=cl><span class=s1>    /_.&#39;</span>/_  //_<span class=s1>&#39;/_ / // //_///_//_///_&#39;</span>_<span class=se>\ </span>
+</span></span><span class=line><span class=cl>                                _/        
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>       Unified Communication Products
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                 www.d2tech.com
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>keymgr<span class=o>]</span> Bolt new board rev 5<span class=o>(</span>RED RSSI LED<span class=o>)</span>
+</span></span><span class=line><span class=cl>vapp_init.c:621 - <span class=nv>hostname_ptr</span><span class=o>=</span>192.168.1.123
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>vapp_init.c:661 VAPP hostname 192.168.1.123 <span class=o>(</span><span class=s1>&#39;192.168.1.123&#39;</span><span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>vapp_init.c:663 VAPP hostname 192.168.1.123 <span class=o>(</span>hbo c0a8017b<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>_VAPP_initSetupSystem <span class=m>767</span> - <span class=nv>flashTmo</span> <span class=o>=</span> <span class=m>5</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>_VAPP_initSetupSystem <span class=m>1008</span> - MGMT <span class=nv>port</span> <span class=o>=</span> <span class=m>10000</span>
+</span></span><span class=line><span class=cl>Set reg status: Unregistered
+</span></span><span class=line><span class=cl>vapp_init: <span class=nv>uname00</span><span class=o>=</span> not <span class=nb>set</span> <span class=nv>infc</span><span class=o>=</span><span class=m>0</span> <span class=nv>appr</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl>vapp_init: - forcing default <span class=nv>uname00</span><span class=o>=</span><span class=m>000000001681920</span>
+</span></span><span class=line><span class=cl>vapp_init.c 1503: dname00 not set, defaulting to uname <span class=s1>&#39;000000001681920&#39;</span>
+</span></span><span class=line><span class=cl>vapp_init.c <span class=m>1622</span> - <span class=nv>dtmfType</span> <span class=o>=</span> 2, coderEnable<span class=o>[</span>VAPP_CODER_DTMF<span class=o>]</span> <span class=o>=</span> <span class=m>1</span>
+</span></span><span class=line><span class=cl>vapp_init.c: <span class=m>1719</span> UA <span class=m>0</span> is configured with these params:
+</span></span><span class=line><span class=cl>Hostname:      192.168.1.123 <span class=o>(</span>hbo c0a8017b<span class=o>)</span>
+</span></span><span class=line><span class=cl>HostAddr:      192.168.1.123
+</span></span><span class=line><span class=cl>Authname:      ********
+</span></span><span class=line><span class=cl>Password:      ********
+</span></span><span class=line><span class=cl>Domain:        ims.indosat.com
+</span></span><span class=line><span class=cl>Realm:         ims.indosat.com
+</span></span><span class=line><span class=cl>Registrar:     202.62.29.166
+</span></span><span class=line><span class=cl>Proxy    :     202.62.29.166
+</span></span><span class=line><span class=cl>Username<span class=o>[</span>0<span class=o>]</span>:   ********
+</span></span><span class=line><span class=cl>Dname<span class=o>[</span>0<span class=o>]</span>:      ********
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Channel 0: Revision Id 0xA2<span class=o>(</span>0x18:0x2<span class=o>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Si3217x: Channel <span class=m>0</span> : <span class=nv>Type</span> <span class=o>=</span> PROSLIC
+</span></span><span class=line><span class=cl>si3217x : Channel <span class=m>0</span> : <span class=nv>Type</span> <span class=o>=</span> <span class=m>24</span>
+</span></span><span class=line><span class=cl>si3217x : Channel <span class=m>0</span> : <span class=nv>Rev</span>  <span class=o>=</span> <span class=m>2</span>
+</span></span><span class=line><span class=cl>Si3217x: loading patch: <span class=m>06182014</span>
+</span></span><span class=line><span class=cl>Si3217x: Channel <span class=m>0</span> : VBAT <span class=nv>Up</span> <span class=o>=</span> 58.375 v
+</span></span><span class=line><span class=cl>br0: port 3<span class=o>(</span>rai0<span class=o>)</span> entering learning state
+</span></span><span class=line><span class=cl>br0: port 2<span class=o>(</span>eth2.1<span class=o>)</span> entering learning state
+</span></span><span class=line><span class=cl>br0: port 1<span class=o>(</span>ra0<span class=o>)</span> entering learning state
+</span></span><span class=line><span class=cl>Si3217x: PCMStart
+</span></span><span class=line><span class=cl>vapp_vtsp.c: VTSP_getVersion reports v1.4.0
+</span></span><span class=line><span class=cl>IOCTL_QMI_GET_SERVICE_FILE : <span class=nv>arg</span><span class=o>=</span><span class=nv>1</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>===============</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>result</span><span class=o>=</span><span class=nv>1b01</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>===============</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>IOCTL_QMI_GET_SERVICE_FILE : <span class=nv>arg</span><span class=o>=</span><span class=nv>2</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>===============</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>result</span><span class=o>=</span><span class=nv>202</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>===============</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>IOCTL_QMI_GET_SERVICE_FILE : <span class=nv>arg</span><span class=o>=</span><span class=nv>3</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>===============</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>result</span><span class=o>=</span><span class=nv>303</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>===============</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>             D2 Technologies, Inc.
+</span></span><span class=line><span class=cl>      _   _  __                           
+</span></span><span class=line><span class=cl>     / <span class=p>|</span> <span class=s1>&#39;/  /_  _  /_ _  _  /_  _  ._   _
+</span></span></span><span class=line><span class=cl><span class=s1>    /_.&#39;</span>/_  //_<span class=s1>&#39;/_ / // //_///_//_///_&#39;</span>_<span class=se>\ </span>
+</span></span><span class=line><span class=cl>                                _/        
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        Unified Communication Products
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>               www.d2tech.com
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        +D2Tech+ VTSP_RT WANG2_R_1_6_11
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+ VTSP_RT WANG2_R_1_6_11
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+ comm trunk-comm src-svn: <span class=m>4647</span> d2tools-svn: <span class=m>4647</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+ tone M24KEC4_B_1_1-tone_1_2 src-svn: <span class=m>225</span> d2tools-svn: <span class=m>3454</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>+D2Tech+
+</span></span><span class=line><span class=cl>_VHW_start <span class=m>874</span> Start the TASKLET mode 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>[</span>LTE<span class=o>]</span> -&gt; LTE module found.
+</span></span><span class=line><span class=cl>Set call status: Idle
+</span></span><span class=line><span class=cl><span class=o>[</span>LTE<span class=o>]</span> -&gt; No SIM card.
+</span></span><span class=line><span class=cl>br0: topology change detected, propagating
+</span></span><span class=line><span class=cl>br0: port 3<span class=o>(</span>rai0<span class=o>)</span> entering forwarding state
+</span></span><span class=line><span class=cl>br0: topology change detected, propagating
+</span></span><span class=line><span class=cl>br0: port 2<span class=o>(</span>eth2.1<span class=o>)</span> entering forwarding state
+</span></span><span class=line><span class=cl>br0: topology change detected, propagating
+</span></span><span class=line><span class=cl>br0: port 1<span class=o>(</span>ra0<span class=o>)</span> entering forwarding state
+</span></span><span class=line><span class=cl>VTSPR_task <span class=m>141</span> RealTime miss found in VTSPR tasklet mode
 </span></span></code></pre></div></div><footer class=post-footer><div id=comments class=thin><script src=https://utteranc.es/client.js repo=radito/radito.github.io issue-term="Blog Post - Ngoprek Bolt BL-100" theme=github-light crossorigin=anonymous async></script></div><ul class=post-tags></ul><nav class=paginav><a class=prev href=https://radito.github.io/posts/fc30572e-a48e-4461-9776-2822965f34cc/><span class=title>« Prev</span><br><span>Akses Port UART/Serial Bolt BL-100</span></a>
 <a class=next href=https://radito.github.io/posts/423def8e-4caf-4d57-a782-2d9fc3d670ed/><span class=title>Next »</span><br><span>OpenWRT</span></a></nav><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share Ngoprek Bolt BL-100 on twitter" href="https://twitter.com/intent/tweet/?text=Ngoprek%20Bolt%20BL-100&amp;url=https%3a%2f%2fradito.github.io%2fposts%2fd52505f2-fd5b-4dd1-8286-fdc37c700cfb%2f&amp;hashtags="><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Ngoprek Bolt BL-100 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fradito.github.io%2fposts%2fd52505f2-fd5b-4dd1-8286-fdc37c700cfb%2f&amp;title=Ngoprek%20Bolt%20BL-100&amp;summary=Ngoprek%20Bolt%20BL-100&amp;source=https%3a%2f%2fradito.github.io%2fposts%2fd52505f2-fd5b-4dd1-8286-fdc37c700cfb%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Ngoprek Bolt BL-100 on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fradito.github.io%2fposts%2fd52505f2-fd5b-4dd1-8286-fdc37c700cfb%2f&title=Ngoprek%20Bolt%20BL-100"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Ngoprek Bolt BL-100 on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fradito.github.io%2fposts%2fd52505f2-fd5b-4dd1-8286-fdc37c700cfb%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Ngoprek Bolt BL-100 on whatsapp" href="https://api.whatsapp.com/send?text=Ngoprek%20Bolt%20BL-100%20-%20https%3a%2f%2fradito.github.io%2fposts%2fd52505f2-fd5b-4dd1-8286-fdc37c700cfb%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Ngoprek Bolt BL-100 on telegram" href="https://telegram.me/share/url?text=Ngoprek%20Bolt%20BL-100&amp;url=https%3a%2f%2fradito.github.io%2fposts%2fd52505f2-fd5b-4dd1-8286-fdc37c700cfb%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></div></footer></article></main><footer class=footer><span>&copy; 2023 <a href=https://radito.github.io/>Radito's Blog</a></span>
 <span>Powered by
