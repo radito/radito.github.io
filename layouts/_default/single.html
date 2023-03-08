@@ -1,5 +1,17 @@
 {{- define "main" }}
 
+<script type="application/ld+json" class="reviews-schema" data-ref="{{ md5 .Page.Title }}"> {
+    "@context": "http://schema.org", 
+    "@type": "Product", 
+    "name": "Embed Social", 
+    "aggregateRating": 
+    { 
+        "@type": "AggregateRating", 
+        "ratingValue": "5", 
+        "reviewCount": "100"
+    }
+  } </script>
+
 <article class="post-single">
     <header class="post-header">
         {{ partial "breadcrumbs.html" . }}
