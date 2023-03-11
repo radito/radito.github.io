@@ -122,11 +122,11 @@ menu:
       weight: 10
     - identifier: archives
       name: Archives
-      url: /archives
+      url: /archives/
       weight: 20
     - identifier: search
       name: Search
-      url: /search
+      url: /search/
       weight: 20
     # - identifier: example
     #   name: example.org
