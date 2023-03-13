@@ -64,7 +64,7 @@ Level logika UART 5V dan 3.3V adalah dua level tegangan yang umum digunakan pada
       <description>💡 Apa itu Router ?
 Router adalah perangkat jaringan yang meneruskan paket data antara jaringan komputer. Router terhubung dengan setidaknya dua jaringan, biasanya dua LAN (Local Area Network) atau WAN (Wide Area Network) atau LAN dan jaringan ISP (Internet Service Provider) nya. Router terletak di gerbang, tempat di mana dua atau lebih jaringan terhubung.
 ✳️ ToDo List Oprek
-Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE</description>
+Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod USB Port Install Firmware OpenWRT Menggunakan Command Line Menggunakan Web Interface (Cara Mudah) Konfigurasi modem LTE di OpenWRT ✳️ Router Bolt dengan Modem LTE</description>
     </item>
     
     <item>
