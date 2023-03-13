@@ -5,7 +5,17 @@
     <link>https://radito.github.io/posts/</link>
     <description>Recent content in Posts on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Mar 2023 00:46:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2023 14:10:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install OpenWRT Bolt BL-100/BL-201 Dengan Script (1x Klik)</title>
+      <link>https://radito.github.io/posts/bd5a426b-d8e8-4ab6-a30f-4e0e58664933/</link>
+      <pubDate>Mon, 13 Mar 2023 14:10:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/bd5a426b-d8e8-4ab6-a30f-4e0e58664933/</guid>
+      <description>Di postingan sebelumnya sudah dijelaskan tentang instalasi OpenWRT secara manual menggunakan command line di router Bolt BL-100. Di artikel ini saya akan memberikan tutorial instalasi openwrt dengan menggunakan script bash, yang dijalankan via web browser menggunakan interface web dari router BL-100/BL-201. Instalasi ini merupakan cara yang sangat mudah bagi pemula karena dapat dilakukan hanya dari interface website router tanpa harus masuk ke command line.
+Bahan Yang Diperlukan Router Bolt BL-100/BL-201 Koneksi Internet Langkah Install OpenWRT Akses Web Router dengan mengetikkan IP Addressnya.</description>
+    </item>
+    
     <item>
       <title>Install OpenWRT Bolt BL-100/BL-201 Tanpa Alat Tambahan</title>
       <link>https://radito.github.io/posts/dd8a69a1-68f8-419e-baa3-0889752e3f75/</link>
