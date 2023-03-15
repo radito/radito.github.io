@@ -5,7 +5,17 @@
     <link>https://radito.github.io/posts/</link>
     <description>Recent content in Posts on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Mar 2023 14:10:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 23:50:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overclock Bolt BL-100/BL-201 (Mediatek MT7620A)</title>
+      <link>https://radito.github.io/posts/5129cab0-b4a1-4016-9cc9-8594033fea48/</link>
+      <pubDate>Tue, 14 Mar 2023 23:50:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/5129cab0-b4a1-4016-9cc9-8594033fea48/</guid>
+      <description>Overclocking Router adalah proses meningkatkan kecepatan clock CPU router melebihi pengaturan default pabrik. CPU adalah &amp;ldquo;otak&amp;rdquo; router, bertanggung jawab untuk melakukan perhitungan dan mengelola lalu lintas jaringan. Dengan mempercepat CPU, pengguna dapat meningkatkan kemampuan pemrosesan router, yang dapat menghasilkan kecepatan jaringan yang lebih cepat dan performa yang lebih baik.
+Namun, overclocking router tidak disarankan bagi sebagian besar pengguna karena dapat membatalkan garansi router dan berpotensi merusak hardware. Overclocking juga dapat meningkatkan output panas router, yang dapat menyebabkan masalah stabilitas dan bahkan kegagalan hardware jika tidak dikelola dengan baik.</description>
+    </item>
+    
     <item>
       <title>Install OpenWRT Bolt BL-100/BL-201 Dengan Script</title>
       <link>https://radito.github.io/posts/bd5a426b-d8e8-4ab6-a30f-4e0e58664933/</link>
