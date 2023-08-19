@@ -5,7 +5,30 @@
     <link>https://radito.github.io/posts/</link>
     <description>Recent content in Posts on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 14 Mar 2023 23:50:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Aug 2023 07:49:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Implementasi HMAC di ESP32 / ESP8266</title>
+      <link>https://radito.github.io/posts/aa56eb07-4f2d-47b4-bb88-3b4bb72ca41d/</link>
+      <pubDate>Mon, 14 Aug 2023 07:49:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/aa56eb07-4f2d-47b4-bb88-3b4bb72ca41d/</guid>
+      <description>Hash Message Authentication Code (HMAC) adalah sebuah kode yang digunakan untuk mengautentikasi keaslian pesan yang dikirimkan dari sebuah klien menuju server atau sebaliknya. HMAC. Pengguaan HMAC didasari dengan penggunaan Secret key yang disetujui antara klien dan server, serta payload adalah masukan yang digunakan untuk menghitung HASH hasil hmac.
+Algoritma hash yang digunakan HMAC bervariasi, tetapi kebanyakan menggunakan algoritma SHA1 atau SHA256. Berikut ini adalah ilustrasi penggunaan HMAC antar klien dan server.</description>
+    </item>
+    
+    <item>
+      <title>Debugging Driver Modem LTE FW BL-100</title>
+      <link>https://radito.github.io/posts/ae200cad-3ad0-4977-b86d-0d424669858f/</link>
+      <pubDate>Sun, 19 Mar 2023 00:22:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/ae200cad-3ad0-4977-b86d-0d424669858f/</guid>
+      <description>Boot Log
+creating qcqmi0 ++ /sbin/automount_lte.sh: qcqmi0, qcqmi0, add, ===================== usb device: usbdev1.2 path: vendor: 05c6 product: 9026 manufacturer: Askey LTE module Log From /sys/class
+# ls -la /sys/class/usb_device/ lrwxrwxrwx 1 0 0 0 usbdev2.1 -&amp;gt; ../../devices/platform/rt3xxx-ohci/usb2/usb_device/usbdev2.1 lrwxrwxrwx 1 0 0 0 usbdev1.1 -&amp;gt; ../../devices/platform/rt3xxx-ehci/usb1/usb_device/usbdev1.1 drwxr-xr-x 20 0 0 0 .. drwxr-xr-x 2 0 0 0 . USB ACM driver
+# ls -al /sys/class/tty/*/device/driver lrwxrwxrwx 1 0 0 0 /sys/class/tty/ttyS1/device/driver -&amp;gt; .</description>
+    </item>
+    
     <item>
       <title>Overclock Bolt BL-100/BL-201 (Mediatek MT7620A)</title>
       <link>https://radito.github.io/posts/5129cab0-b4a1-4016-9cc9-8594033fea48/</link>
