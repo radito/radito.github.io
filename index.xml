@@ -6,7 +6,17 @@
     <description>Recent content on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Aug 2023 07:49:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Dec 2023 10:27:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mengaktifkan Modem LTE di Router Bolt BL-100 (OpenWRT)</title>
+      <link>https://radito.github.io/posts/b396a73c-54cd-4f96-80c0-429fe568a363/</link>
+      <pubDate>Sat, 16 Dec 2023 10:27:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/b396a73c-54cd-4f96-80c0-429fe568a363/</guid>
+      <description>Gambar diatas merupakan modem yang ada pada Router Bolt BL-100. Modem tersebut menggunakan interface m2 seperti PCI-e, tetapi pada implementasinya aslinya menggunakan protokol USB sebagai sistem komunikasi data antara cpu dan modem. Modem ini mensupport band B40 dengan frekuensi 2300.
+Setelah beberapa kali debugging dan percobaan, serta membaca referensi dari anggota grup Facebook LT4220 ternyata ada beberapa cara yang harus di kerjakan agar modem ini dapat bekerja yaitu diperlukan driver dan perintah untuk mengaktifkan pin GPIO keluaran chipset mt7620 dimana pin GPIO 28 digunakan untuk mengaktifkan suplai daya ke pin pci yang digunakan.</description>
+    </item>
+    
     <item>
       <title>Implementasi HMAC di ESP32 / ESP8266</title>
       <link>https://radito.github.io/posts/aa56eb07-4f2d-47b4-bb88-3b4bb72ca41d/</link>
