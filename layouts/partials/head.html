@@ -38,7 +38,6 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css" media="print" onload="this.media='all'">
 
-
 {{- /* Styles */}}
 
 {{- /* includes */}}
@@ -335,4 +334,17 @@
             }
         });
     });
+</script>
+
+<script>
+    const currentLocal = localStorage.getItem("pref-theme");
+
+    if (!currentLocal && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        localStorage.setItem("pref-theme", "dark");
+        document.documentElement.classList.add('c_darkmode');
+    }
+
+    if (currentLocal == "dark") {
+        document.documentElement.classList.add('c_darkmode');
+    }
 </script>

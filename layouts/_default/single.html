@@ -52,8 +52,7 @@
 
         <div id="comments" class="thin">
             <script src="https://utteranc.es/client.js" repo="radito/radito.github.io"
-                issue-term="Blog Post - {{ .Page.Title }}" theme="github-light" crossorigin="anonymous" async>
-                </script>
+                issue-term="Blog Post - {{ .Page.Title }}" theme="github-light" crossorigin="anonymous" async></script>
         </div>
 
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
@@ -74,5 +73,40 @@
     {{- partial "comments.html" . }}
     {{- end }}
 </article>
+
+<script>
+    window.onload = () => {
+        const choosedTheme = localStorage.getItem("pref-theme");
+
+        const utterances = document.querySelector(".utterances-frame");
+        let utterancesUrl = new URL(utterances.getAttribute("src"));
+
+        if (!choosedTheme) {
+            utterancesUrl.searchParams.set('theme', 'github-light');
+        } else if (choosedTheme == "light") {
+            utterancesUrl.searchParams.set('theme', 'github-light');
+        } else {
+            utterancesUrl.searchParams.set('theme', 'github-dark');
+        }
+
+        utterances.setAttribute("src", utterancesUrl.toString());
+    }
+
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const choosedTheme = localStorage.getItem("pref-theme") == "light" ? "dark" : "light";
+
+        const utterances = document.querySelector(".utterances-frame");
+        let utterancesUrl = new URL(utterances.getAttribute("src"));
+
+        if (choosedTheme == "light") {
+            utterancesUrl.searchParams.set('theme', 'github-light');
+        } else {
+            utterancesUrl.searchParams.set('theme', 'github-dark');
+        }
+
+        utterances.setAttribute("src", utterancesUrl.toString());
+    })
+
+</script>
 
 {{- end }}{{/* end main */}}
