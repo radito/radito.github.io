@@ -1,7 +1,8 @@
 .post-entry {
-  transition: 300ms;
+  backface-visibility: hidden;
+  transition: box-shadow 300ms, transform 300ms;
 }
 .post-entry:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 3.6px;
-  scale: 103%;
+  transform: scale(103%);
 }
