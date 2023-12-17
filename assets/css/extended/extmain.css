@@ -1,0 +1,7 @@
+.post-entry {
+  transition: 300ms;
+}
+.post-entry:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 3.6px;
+  scale: 103%;
+}
