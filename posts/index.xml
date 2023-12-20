@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Sat, 16 Dec 2023 10:27:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mengaktifkan Modem LTE di Router Bolt BL-100 (OpenWRT)</title>
+      <title>📶 Mengaktifkan Modem LTE di Router Bolt BL-100 (OpenWRT)</title>
       <link>https://radito.github.io/posts/b396a73c-54cd-4f96-80c0-429fe568a363/</link>
       <pubDate>Sat, 16 Dec 2023 10:27:00 +0000</pubDate>
       
@@ -18,7 +18,7 @@ Setelah beberapa kali debugging dan percobaan, serta membaca referensi dari angg
     </item>
     
     <item>
-      <title>Implementasi HMAC di ESP32 / ESP8266</title>
+      <title>🔐 Implementasi HMAC di ESP32 / ESP8266</title>
       <link>https://radito.github.io/posts/aa56eb07-4f2d-47b4-bb88-3b4bb72ca41d/</link>
       <pubDate>Mon, 14 Aug 2023 07:49:00 +0000</pubDate>
       
@@ -28,7 +28,7 @@ Algoritma hash yang digunakan HMAC bervariasi, tetapi kebanyakan menggunakan alg
     </item>
     
     <item>
-      <title>Debugging Driver Modem LTE FW BL-100</title>
+      <title>✳️ Debugging Driver Modem LTE FW BL-100</title>
       <link>https://radito.github.io/posts/ae200cad-3ad0-4977-b86d-0d424669858f/</link>
       <pubDate>Sun, 19 Mar 2023 00:22:00 +0000</pubDate>
       
@@ -40,7 +40,7 @@ creating qcqmi0 ++ /sbin/automount_lte.sh: qcqmi0, qcqmi0, add, ================
     </item>
     
     <item>
-      <title>Overclock Bolt BL-100/BL-201 (Mediatek MT7620A)</title>
+      <title>⚡️ Overclock Bolt BL-100/BL-201 (Mediatek MT7620A)</title>
       <link>https://radito.github.io/posts/5129cab0-b4a1-4016-9cc9-8594033fea48/</link>
       <pubDate>Tue, 14 Mar 2023 23:50:00 +0000</pubDate>
       
@@ -50,7 +50,7 @@ Namun, overclocking router tidak disarankan bagi sebagian besar pengguna karena 
     </item>
     
     <item>
-      <title>Install OpenWRT Bolt BL-100/BL-201 Dengan Script</title>
+      <title>💾 Install OpenWRT Bolt BL-100/BL-201 Dengan Script</title>
       <link>https://radito.github.io/posts/bd5a426b-d8e8-4ab6-a30f-4e0e58664933/</link>
       <pubDate>Mon, 13 Mar 2023 14:10:00 +0000</pubDate>
       
@@ -59,7 +59,7 @@ Namun, overclocking router tidak disarankan bagi sebagian besar pengguna karena 
     </item>
     
     <item>
-      <title>Install OpenWRT Bolt BL-100/BL-201 Tanpa Alat Tambahan</title>
+      <title>💾 Install OpenWRT Bolt BL-100/BL-201 Tanpa Alat Tambahan</title>
       <link>https://radito.github.io/posts/dd8a69a1-68f8-419e-baa3-0889752e3f75/</link>
       <pubDate>Fri, 10 Mar 2023 00:46:00 +0000</pubDate>
       
@@ -69,7 +69,7 @@ Salah satu chipset populer yang digunakan dalam router yang kompatibel dengan Op
     </item>
     
     <item>
-      <title>Dump Firmware Bolt BL-100 Tanpa Flash Reader</title>
+      <title>💿 Dump Firmware Bolt BL-100 Tanpa Flash Reader</title>
       <link>https://radito.github.io/posts/bc8972d2-06af-42d9-b12e-df3cce60677a/</link>
       <pubDate>Tue, 07 Mar 2023 14:36:00 +0000</pubDate>
       
@@ -79,7 +79,7 @@ Biasanya untuk melakukan dump firmware menggunakan bantuan alat Programmer CH341
     </item>
     
     <item>
-      <title>Rooting Firmware Ori Bolt BL-100</title>
+      <title>✴️ Rooting Firmware Ori Bolt BL-100</title>
       <link>https://radito.github.io/posts/25149034-6a06-4629-b657-5d42dac4a9b2/</link>
       <pubDate>Mon, 06 Mar 2023 08:42:00 +0000</pubDate>
       
@@ -89,7 +89,7 @@ Langkah - Langkah Akses Root Bolt BL-100 💡 Versi Firmware yang digunakan adal
     </item>
     
     <item>
-      <title>Akses Port UART/Serial Bolt BL-100</title>
+      <title>🪲Akses Port UART/Serial Bolt BL-100</title>
       <link>https://radito.github.io/posts/fc30572e-a48e-4461-9776-2822965f34cc/</link>
       <pubDate>Mon, 06 Mar 2023 00:15:00 +0000</pubDate>
       
@@ -99,7 +99,7 @@ Level logika UART 5V dan 3.3V adalah dua level tegangan yang umum digunakan pada
     </item>
     
     <item>
-      <title>Ngoprek Bolt BL-100</title>
+      <title>⚙️ Ngoprek Bolt BL-100</title>
       <link>https://radito.github.io/posts/d52505f2-fd5b-4dd1-8286-fdc37c700cfb/</link>
       <pubDate>Sun, 26 Feb 2023 05:07:00 +0000</pubDate>
       
@@ -111,7 +111,7 @@ Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod 
     </item>
     
     <item>
-      <title>OpenWRT</title>
+      <title>🛜 OpenWRT</title>
       <link>https://radito.github.io/posts/423def8e-4caf-4d57-a782-2d9fc3d670ed/</link>
       <pubDate>Sat, 25 Feb 2023 20:51:00 +0000</pubDate>
       
