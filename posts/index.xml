@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 Dec 2023 10:27:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Dec 2023 01:11:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🔄 Restart Modem BL-100 (OpenWRT)</title>
+      <link>https://radito.github.io/posts/6b0dfa39-35a9-4af5-b2e9-ded176981f46/</link>
+      <pubDate>Fri, 29 Dec 2023 01:11:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/6b0dfa39-35a9-4af5-b2e9-ded176981f46/</guid>
+      <description>Bolt BL-100 Memiliki modem lte qualcomm yang dipasang menggunakan socket pci-e. Socket pci -e ini memiliki daya 3.3v yang terhubung secara langsung ke pin gpio 28. Daya yang didapatkan diberikan oleh pin keluaran chip mt7620 sebagai prosesornya.
+#!/bin/sh gpio_path=&amp;#34;/sys/class/gpio/gpio28/value&amp;#34; if [ ! -e &amp;#34;$gpio_path&amp;#34; ]; then echo &amp;#34;Booting Modem...&amp;#34; | tee &amp;gt;(logger) sleep 1 echo 28 &amp;gt; /sys/class/gpio/export echo out &amp;gt; /sys/class/gpio/gpio28/direction echo 1 &amp;gt; /sys/class/gpio/gpio28/value sleep 1 echo &amp;#34;Writing Driver VID &amp;amp; PID&amp;#34; | tee &amp;gt;(logger) echo &amp;#34;05c6 9026&amp;#34; &amp;gt; /sys/bus/usb/drivers/qmi_wwan/new_id echo &amp;#34;Booting completed !</description>
+    </item>
+    
     <item>
       <title>📶 Mengaktifkan Modem LTE di Router Bolt BL-100 (OpenWRT)</title>
       <link>https://radito.github.io/posts/b396a73c-54cd-4f96-80c0-429fe568a363/</link>
