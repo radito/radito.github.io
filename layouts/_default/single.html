@@ -75,9 +75,12 @@
 </article>
 
 <script>
-    window.onload = () => {
+    window.onload = async () => {
+        await new Promise(r => setTimeout(r, 100));
         const choosedTheme = localStorage.getItem("pref-theme");
 
+
+        setSyntaxMode(choosedTheme);
         const utterances = document.querySelector(".utterances-frame");
         let utterancesUrl = new URL(utterances.getAttribute("src"));
 
@@ -92,20 +95,30 @@
         utterances.setAttribute("src", utterancesUrl.toString());
     }
 
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        const choosedTheme = localStorage.getItem("pref-theme") == "light" ? "dark" : "light";
+    window.addEventListener('load', function () {
+        document.getElementById("theme-toggle").addEventListener("click", async () => {
+            await new Promise(r => setTimeout(r, 100));
 
-        const utterances = document.querySelector(".utterances-frame");
-        let utterancesUrl = new URL(utterances.getAttribute("src"));
+            const choosedTheme = localStorage.getItem("pref-theme");
 
-        if (choosedTheme == "light") {
-            utterancesUrl.searchParams.set('theme', 'github-light');
-        } else {
-            utterancesUrl.searchParams.set('theme', 'github-dark');
-        }
+            const utterances = document.querySelector(".utterances-frame");
+            let utterancesUrl = new URL(utterances.getAttribute("src"));
 
-        utterances.setAttribute("src", utterancesUrl.toString());
-    })
+            if (choosedTheme == "light") {
+                setSyntaxMode("light");
+                utterancesUrl.searchParams.set('theme', 'github-light');
+                document.documentElement.classList.remove('c_darkmode');
+            } else {
+                setSyntaxMode("dark");
+                utterancesUrl.searchParams.set('theme', 'github-dark');
+
+                document.documentElement.classList.remove('c_darkmode');
+                document.documentElement.classList.add('c_darkmode');
+            }
+
+            utterances.setAttribute("src", utterancesUrl.toString());
+        });
+    });
 
 </script>
 

@@ -1,0 +1,115 @@
+.theme-github-min {
+  /*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+}
+
+.theme-github-min pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+.theme-github-min code.hljs {
+  /* padding: 3px 5px; */
+  padding: 1rem;
+}
+
+.theme-github-min .hljs {
+  color: #24292e;
+  background: #f0f0f0;
+}
+
+.theme-github-min .hljs-doctag,
+.theme-github-min .hljs-keyword,
+.theme-github-min .hljs-meta .hljs-keyword,
+.theme-github-min .hljs-template-tag,
+.theme-github-min .hljs-template-variable,
+.theme-github-min .hljs-type,
+.theme-github-min .hljs-variable.language_ {
+  color: #d73a49;
+}
+
+.theme-github-min .hljs-title,
+.theme-github-min .hljs-title.class_,
+.theme-github-min .hljs-title.class_.inherited__,
+.theme-github-min .hljs-title.function_ {
+  color: #6f42c1;
+}
+
+.theme-github-min .hljs-attr,
+.theme-github-min .hljs-attribute,
+.theme-github-min .hljs-literal,
+.theme-github-min .hljs-meta,
+.theme-github-min .hljs-number,
+.theme-github-min .hljs-operator,
+.theme-github-min .hljs-selector-attr,
+.theme-github-min .hljs-selector-class,
+.theme-github-min .hljs-selector-id,
+.theme-github-min .hljs-variable {
+  color: #005cc5;
+}
+
+.theme-github-min .hljs-meta .hljs-string,
+.theme-github-min .hljs-regexp,
+.theme-github-min .hljs-string {
+  color: #032f62;
+}
+
+.theme-github-min .hljs-built_in,
+.theme-github-min .hljs-symbol {
+  color: #e36209;
+}
+
+.theme-github-min .hljs-code,
+.theme-github-min .hljs-comment,
+.theme-github-min .hljs-formula {
+  color: #6a737d;
+}
+
+.theme-github-min .hljs-name,
+.theme-github-min .hljs-quote,
+.theme-github-min .hljs-selector-pseudo,
+.theme-github-min .hljs-selector-tag {
+  color: #22863a;
+}
+
+.theme-github-min .hljs-subst {
+  color: #24292e;
+}
+
+.theme-github-min .hljs-section {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.theme-github-min .hljs-bullet {
+  color: #735c0f;
+}
+
+.theme-github-min .hljs-emphasis {
+  color: #24292e;
+  font-style: italic;
+}
+
+.theme-github-min .hljs-strong {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.theme-github-min .hljs-addition {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.theme-github-min .hljs-deletion {
+  color: #b31d28;
+  background-color: #ffeef0;
+}

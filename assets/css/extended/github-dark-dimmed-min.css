@@ -1,0 +1,114 @@
+.theme-github-dark-dimmed-min {
+  /*!
+  Theme: GitHub Dark Dimmed
+  Description: Dark dimmed theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Colors taken from GitHub's CSS
+*/
+}
+
+.theme-github-dark-dimmed-min pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+.theme-github-dark-dimmed-min code.hljs {
+  /* padding: 3px 5px; */
+  padding: 1rem;
+}
+
+.theme-github-dark-dimmed-min .hljs {
+  color: #adbac7;
+  background: #22272e;
+}
+
+.theme-github-dark-dimmed-min .hljs-doctag,
+.theme-github-dark-dimmed-min .hljs-keyword,
+.theme-github-dark-dimmed-min .hljs-meta .hljs-keyword,
+.theme-github-dark-dimmed-min .hljs-template-tag,
+.theme-github-dark-dimmed-min .hljs-template-variable,
+.theme-github-dark-dimmed-min .hljs-type,
+.theme-github-dark-dimmed-min .hljs-variable.language_ {
+  color: #f47067;
+}
+
+.theme-github-dark-dimmed-min .hljs-title,
+.theme-github-dark-dimmed-min .hljs-title.class_,
+.theme-github-dark-dimmed-min .hljs-title.class_.inherited__,
+.theme-github-dark-dimmed-min .hljs-title.function_ {
+  color: #dcbdfb;
+}
+
+.theme-github-dark-dimmed-min .hljs-attr,
+.theme-github-dark-dimmed-min .hljs-attribute,
+.theme-github-dark-dimmed-min .hljs-literal,
+.theme-github-dark-dimmed-min .hljs-meta,
+.theme-github-dark-dimmed-min .hljs-number,
+.theme-github-dark-dimmed-min .hljs-operator,
+.theme-github-dark-dimmed-min .hljs-selector-attr,
+.theme-github-dark-dimmed-min .hljs-selector-class,
+.theme-github-dark-dimmed-min .hljs-selector-id,
+.theme-github-dark-dimmed-min .hljs-variable {
+  color: #6cb6ff;
+}
+
+.theme-github-dark-dimmed-min .hljs-meta .hljs-string,
+.theme-github-dark-dimmed-min .hljs-regexp,
+.theme-github-dark-dimmed-min .hljs-string {
+  color: #96d0ff;
+}
+
+.theme-github-dark-dimmed-min .hljs-built_in,
+.theme-github-dark-dimmed-min .hljs-symbol {
+  color: #f69d50;
+}
+
+.theme-github-dark-dimmed-min .hljs-code,
+.theme-github-dark-dimmed-min .hljs-comment,
+.theme-github-dark-dimmed-min .hljs-formula {
+  color: #768390;
+}
+
+.theme-github-dark-dimmed-min .hljs-name,
+.theme-github-dark-dimmed-min .hljs-quote,
+.theme-github-dark-dimmed-min .hljs-selector-pseudo,
+.theme-github-dark-dimmed-min .hljs-selector-tag {
+  color: #8ddb8c;
+}
+
+.theme-github-dark-dimmed-min .hljs-subst {
+  color: #adbac7;
+}
+
+.theme-github-dark-dimmed-min .hljs-section {
+  color: #316dca;
+  font-weight: 700;
+}
+
+.theme-github-dark-dimmed-min .hljs-bullet {
+  color: #eac55f;
+}
+
+.theme-github-dark-dimmed-min .hljs-emphasis {
+  color: #adbac7;
+  font-style: italic;
+}
+
+.theme-github-dark-dimmed-min .hljs-strong {
+  color: #adbac7;
+  font-weight: 700;
+}
+
+.theme-github-dark-dimmed-min .hljs-addition {
+  color: #b4f1b4;
+  background-color: #1b4721;
+}
+
+.theme-github-dark-dimmed-min .hljs-deletion {
+  color: #ffd8d3;
+  background-color: #78191b;
+}
