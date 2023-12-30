@@ -80,7 +80,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Welcome 🙋‍♂️"
-    Content: Blog tentang Teknologi, IoT, Software.
+    Content: Blog tentang Tech, Coding, Embedded dan IoT.
 
   # socialIcons:
   #   - name: twitter
