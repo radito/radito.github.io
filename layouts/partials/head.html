@@ -214,24 +214,8 @@ resources.Minify }}
 <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@latest/dist/cookieconsent.js"></script>
 
 <script>
-    window.addEventListener('load', function () {
-        document.querySelectorAll('img').forEach((v, i) => {
-            const view = new Viewer(v, {
-                movable: false,
-                navbar: false,
-                toolbar: false,
-                focus: true,
-                transition: false
-            });
-
-            v.addEventListener("show", function () {
-                document.getElementsByTagName('html')[0].style.overflow = "hidden";
-            });
-
-            v.addEventListener("hide", function () {
-                document.getElementsByTagName('html')[0].style.overflow = "scroll";
-            });
-        })
+    window.addEventListener('load', async function () {
+        await new Promise(r => setTimeout(r, 3000));
 
         // obtain plugin
         var cc = initCookieConsent();
@@ -344,6 +328,7 @@ resources.Minify }}
                 }
             }
         });
+
     });
 </script>
 
