@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: G-T5BM0HNNW0
+# googleAnalytics: G-T5BM0HNNW0
 
 minify:
   disableXML: true

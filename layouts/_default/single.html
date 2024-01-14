@@ -1,4 +1,8 @@
 {{- define "main" }}
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.css" as="style" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.js" rel="preload" as="script">
 
 <script type="application/ld+json" class="reviews-schema" data-ref="{{ md5 .Page.Title }}"> {
     "@context": "http://schema.org", 
@@ -121,5 +125,8 @@
     });
 
 </script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.js"></script>
 
 {{- end }}{{/* end main */}}

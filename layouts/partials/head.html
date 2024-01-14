@@ -198,9 +198,6 @@ resources.Minify }}
     }
 </style>
 
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.css" as="style" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.css" />
-
 {{- partial "extend_head.html" . -}}
 
 {{- /* Misc */}}
@@ -211,8 +208,10 @@ resources.Minify }}
 {{- template "partials/templates/schema_json.html" . }}
 {{- end -}}
 
+<link href="https://www.googletagmanager.com/gtag/js?id=G-T5BM0HNNW0" rel="preload" as="script">
+
+<script defer src="https://www.googletagmanager.com/gtag/js?id=G-T5BM0HNNW0"></script>
 <script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@latest/dist/cookieconsent.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.js"></script>
 
 <script>
     window.addEventListener('load', function () {
