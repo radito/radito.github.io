@@ -51,15 +51,15 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico?raw=1"
-    favicon16x16: "https://www.dropbox.com/s/nsmxqlwfoxa43od/favicon-16x16.png?raw=1"
-    favicon32x32: "https://www.dropbox.com/s/zgr3kmg1tv2lxxo/favicon-32x32.png?raw=1"
-    apple_touch_icon: "https://www.dropbox.com/s/y2dp3tvmm60lds0/apple-touch-icon.png?raw=1"
-    safari_pinned_tab: "https://www.dropbox.com/s/y2dp3tvmm60lds0/apple-touch-icon.png?raw=1"
+    favicon: "https://raw.githubusercontent.com/radito/radito.github.io/main/assets/img/favicon.ico"
+    favicon16x16: "https://raw.githubusercontent.com/radito/radito.github.io/main/assets/img/favicon-16x16.png"
+    favicon32x32: "https://raw.githubusercontent.com/radito/radito.github.io/main/assets/img/favicon-32x32.png"
+    apple_touch_icon: "https://raw.githubusercontent.com/radito/radito.github.io/main/assets/img/apple-touch-icon.png"
+    safari_pinned_tab: "https://raw.githubusercontent.com/radito/radito.github.io/main/assets/img/apple-touch-icon.png"
 
   label:
     text: "Radito's Blog"
-    # icon: https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico?raw=1
+    # icon: https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico
     iconHeight: 35
 
   # profile-mode
