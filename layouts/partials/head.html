@@ -38,8 +38,8 @@
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
 
-{{- if site.Config.Services.GoogleAnalytics.ID }}
-<link href="https://www.googletagmanager.com/gtag/js?id={{ site.Config.Services.GoogleAnalytics.ID }}" rel="preload" as="script">
+{{- if site.Params.GoogleAnalyticsCustom }}
+<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.GoogleAnalyticsCustom }}"></script>
 {{- end }}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css"

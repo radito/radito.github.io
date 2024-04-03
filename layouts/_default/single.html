@@ -81,6 +81,7 @@
   <div
     id="comments"
     class="thin"
+    issue-term="Blog Post - {{ .Page.Title }}"
     style="
       background-color: var(--code-bg);
       border: 1px solid var(--border);
@@ -88,20 +89,25 @@
       padding: 0rem 1rem;
     "
   >
-    <script
-      src="https://utteranc.es/client.js"
-      repo="radito/radito.github.io"
-      issue-term="Blog Post - {{ .Page.Title }}"
-      theme="github-light"
-      crossorigin="anonymous"
-      async
-    ></script>
+    <center>
+      <p style="margin: 0.5rem 0;">
+        Loading Comments ...
+      </p>
+    </center>
   </div>
 
   {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}
 </article>
 
 <script>
+  const utterances = document.createElement("script");
+  utterances.src = `https://utteranc.es/client.js`;
+  utterances.setAttribute("repo", "radito/radito.github.io");
+  utterances.setAttribute("issue-term", "");
+  utterances.setAttribute("theme", "");
+  utterances.setAttribute("crossorigin", "anonymous");
+  utterances.async = true;
+
   window.addEventListener("load", function () {
     document.querySelectorAll("img").forEach((v, i) => {
       const view = new Viewer(v, {
@@ -126,42 +132,42 @@
     .getElementById("theme-toggle")
     .addEventListener("click", async () => {
       const choosedTheme = localStorage.getItem("pref-theme");
-
-      const utterances = document.querySelector(".utterances-frame");
-      let utterancesUrl = new URL(utterances.getAttribute("src"));
+      const utterancesFrame = document.querySelector(".utterances-frame");
 
       if (choosedTheme == "light") {
         setSyntaxMode("dark");
-        utterancesUrl.searchParams.set("theme", "github-dark");
         document.documentElement.classList.remove("c_darkmode");
       } else {
         setSyntaxMode("light");
-        utterancesUrl.searchParams.set("theme", "github-light");
 
         document.documentElement.classList.remove("c_darkmode");
         document.documentElement.classList.add("c_darkmode");
       }
 
-      utterances.setAttribute("src", utterancesUrl.toString());
+      if (utterancesFrame) {
+        const message = {
+          type: "set-theme",
+          theme: choosedTheme == "light" ? "github-dark" : "github-light",
+        };
+
+        utterancesFrame.contentWindow.postMessage(
+          message,
+          "https://utteranc.es"
+        );
+      }
     });
 
   window.onload = async () => {
     const choosedTheme = localStorage.getItem("pref-theme");
+    const comments = document.getElementById("comments");
+    const issueTerm = comments.getAttribute("issue-term");
 
     setSyntaxMode(choosedTheme);
-    const utterances = document.querySelector(".utterances-frame");
-    let utterancesUrl = new URL(utterances.getAttribute("src"));
 
-    if (!choosedTheme) {
-      utterancesUrl.searchParams.set("theme", "github-light");
-    } else if (choosedTheme == "light") {
-      utterancesUrl.searchParams.set("theme", "github-light");
-    } else {
-      utterancesUrl.searchParams.set("theme", "github-dark");
-    }
-
-    await new Promise((r) => setTimeout(r, 1000));
-    utterances.setAttribute("src", utterancesUrl.toString());
+    comments.innerHTML = "";
+    utterances.setAttribute("theme", `github-${choosedTheme ?? "light"}`);
+    utterances.setAttribute("issue-term", issueTerm);
+    comments.appendChild(utterances);
   };
 </script>
 
