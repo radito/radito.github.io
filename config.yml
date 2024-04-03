@@ -18,7 +18,7 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # is necessary
+    - JSON
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
