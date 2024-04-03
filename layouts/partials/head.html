@@ -40,6 +40,14 @@
 
 {{- if site.Params.GoogleAnalyticsCustom }}
 <script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.GoogleAnalyticsCustom }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.Params.GoogleAnalyticsCustom }}');
+</script>
+
 {{- end }}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css"
