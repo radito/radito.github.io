@@ -66,27 +66,37 @@
   {{- end }}
 
   <footer class="post-footer">
-    <div id="comments" class="thin">
-      <script
-        src="https://utteranc.es/client.js"
-        repo="radito/radito.github.io"
-        issue-term="Blog Post - {{ .Page.Title }}"
-        theme="github-light"
-        crossorigin="anonymous"
-        async
-      ></script>
-    </div>
-
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
       {{- range ($.GetTerms $tags) }}
       <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
       {{- end }}
     </ul>
-    {{- if (.Param "ShowPostNavLinks") }} {{- partial "post_nav_links.html" . }}
-    {{- end }} {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare
-    true)) }} {{- partial "share_icons.html" . -}} {{- end }}
+
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}} {{- end }} {{- if (.Param
+    "ShowPostNavLinks") }} {{- partial "post_nav_links.html" . }} {{- end }}
   </footer>
+
+  <div
+    id="comments"
+    class="thin"
+    style="
+      background-color: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0rem 1rem;
+    "
+  >
+    <script
+      src="https://utteranc.es/client.js"
+      repo="radito/radito.github.io"
+      issue-term="Blog Post - {{ .Page.Title }}"
+      theme="github-light"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </div>
 
   {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}
 </article>
