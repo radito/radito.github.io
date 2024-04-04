@@ -50,7 +50,7 @@
             gtag('js', new Date());
             gtag('config', '{{ site.Params.GoogleAnalyticsCustom }}');
         };
-        
+
         document.head.appendChild(gasrc);
     });
 </script>
@@ -390,8 +390,6 @@ resources.Minify }}
 
     window.addEventListener('load', function () {
         document.getElementById("theme-toggle").addEventListener("click", async () => {
-            await new Promise(r => setTimeout(r, 100));
-
             const choosedTheme = localStorage.getItem("pref-theme");
 
             setSyntaxMode(choosedTheme);
