@@ -7,11 +7,24 @@
   transform: scale(103%);
 }
 
-.chroma > code{
+.chroma > code {
   transition: background-color 100ms ease-in-out, color 200ms ease-in-out;
 }
 
 .chroma > code::-webkit-scrollbar {
   width: 0.35rem;
   height: 0.35rem;
+}
+.chroma > code::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chroma > code::-webkit-scrollbar-thumb {
+  border-width: 0px;
+}
+
+.chroma > code::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
+  border: 2px;
+  border-radius: var(--radius);
 }
