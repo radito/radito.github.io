@@ -50,8 +50,17 @@
 
 {{- end }}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css"
-    media="print" onload="this.media='all'">
+<link
+  rel="preload"
+  href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css"
+  as="style"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.css"
+  media="print"
+  onload="this.media='all'"
+/>
 
 {{- /* Styles */}}
 
