@@ -39,15 +39,21 @@
 {{- end }}
 
 {{- if site.Params.GoogleAnalyticsCustom }}
-<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.GoogleAnalyticsCustom }}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '{{ site.Params.GoogleAnalyticsCustom }}');
+    window.addEventListener('load', function () {
+        const gasrc = document.createElement('script');
+        gasrc.type = 'text/javascript';
+        gasrc.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.Params.GoogleAnalyticsCustom }}';
+        gasrc.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '{{ site.Params.GoogleAnalyticsCustom }}');
+        };
+        
+        document.head.appendChild(gasrc);
+    });
 </script>
-
 {{- end }}
 
 <link
