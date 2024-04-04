@@ -89,10 +89,8 @@
       padding: 0rem 1rem;
     "
   >
-    <center>
-      <p style="margin: 0.5rem 0;">
-        Loading Comments ...
-      </p>
+    <center id="loading-comments">
+      <p style="margin: 0.5rem 0">Loading Comments ...</p>
     </center>
   </div>
 
@@ -161,12 +159,18 @@
     const choosedTheme = localStorage.getItem("pref-theme");
     const comments = document.getElementById("comments");
     const issueTerm = comments.getAttribute("issue-term");
+    const loading = document.getElementById("loading-comments");
 
     setSyntaxMode(choosedTheme);
-
-    comments.innerHTML = "";
     utterances.setAttribute("theme", `github-${choosedTheme ?? "light"}`);
     utterances.setAttribute("issue-term", issueTerm);
+
+    window.addEventListener("message", function (e) {
+      if (new URL(e?.origin).host == "utteranc.es") {
+        loading.remove();
+      }
+    });
+
     comments.appendChild(utterances);
   };
 </script>
