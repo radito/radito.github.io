@@ -6,7 +6,17 @@
     <description>Recent content on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Dec 2023 05:20:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Mar 2024 07:48:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🎉 Bolt BL-100 Sudah Didukung Official OpenWRT</title>
+      <link>https://radito.github.io/posts/5d2d41e9-91ea-46af-8c4c-e711f836557c/</link>
+      <pubDate>Sun, 31 Mar 2024 07:48:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/5d2d41e9-91ea-46af-8c4c-e711f836557c/</guid>
+      <description>Diawali dari percobaan mengoprek router Bolt BL100 dengan tujuan untuk mengetahui isi dari router tersebut karena belum banyak post terkait pcb dan module yang ada di dalam router di internet, setelah itu dimulailah journey reverse engineering router bolt bl100, mulai dari mengakses port serial, rooting firmware, install openwrt, hingga aktivasi modem ltenya.
+Sekarang firmware openwrt bolt bl100 sudah didukung official di repository openwrt dan telah masuk ke official download nya. Karena telah masuk ke repo official maka kedepannya firmware akan mendapatkan update kernel yang terus berlanjut serta akan banyak bugfix dan security fix yang dilakukan oleh komunitas open source OpenWRT nantinya.</description>
+    </item>
+    
     <item>
       <title>⛔️ Async Error Handling di TypeScript</title>
       <link>https://radito.github.io/posts/47d0b04e-76e1-49d5-ad42-c083c8c1eb52/</link>
