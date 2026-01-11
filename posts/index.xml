@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 31 Mar 2024 07:48:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Aug 2024 12:19:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⚠️ Disable Flash Message di Android</title>
+      <link>https://radito.github.io/posts/827a05d1-ce74-47b6-8e3c-1a7f4a599e47/</link>
+      <pubDate>Tue, 20 Aug 2024 12:19:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/827a05d1-ce74-47b6-8e3c-1a7f4a599e47/</guid>
+      <description>Penggunaan flash SMS oleh operator sim akhir-akhir ini banyak sekali digunakan. Penggunaan flash sms ini ada beragam tipenya. Ada yang menggunakan flash sms untuk promosi paket data, ada yang digunakan sebagai media advertising (iklan), dan ada juga yang digunakan untuk menginformasikan sisa paket data.
+Jujur sebagai user jika terus terusan mendapatkan sebuah popup besar di depan layar hp tentu akan merasa sangat risih. Karena isi pesannya juga tidak terlalu penting dan hal tersebut malah menjuru ke missuse dari fitur flash sms tersebut.</description>
+    </item>
+    
     <item>
       <title>🎉 Bolt BL-100 Sudah Didukung Official OpenWRT</title>
       <link>https://radito.github.io/posts/5d2d41e9-91ea-46af-8c4c-e711f836557c/</link>
