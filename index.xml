@@ -15,7 +15,7 @@
       <guid>https://radito.github.io/posts/38352adc-95ea-8071-9b53-fde3617af3c7/</guid>
       <description>Most Android root detection starts with the same boring question:
 Is su visible? Is Magisk installed? Is Xposed installed? That is useful, but it is also the easiest layer to lie to.
-When you start looking at modern Android modding stacks like Magisk, Zygisk, LSPosed, KernelSU, APatch, Shamiko, Hide My Applist, Frida, and native hook frameworks, the problem becomes less about asking “is the phone rooted?” and more about asking:</description>
+When you start looking at modern Android modding stacks like Magisk, Zygisk, LSPosed, KernelSU, APatch, Shamiko, Hide My Applist, Frida, and native hook frameworks, the problem becomes less about asking &amp;ldquo;is the phone rooted?&amp;rdquo; and more about asking:</description>
     </item>
     
     <item>
