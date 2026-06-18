@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Radito&#39;s Blog</title>
-    <link>https://radito.github.io/</link>
-    <description>Recent content on Radito&#39;s Blog</description>
+    <title>Posts on Radito&#39;s Blog</title>
+    <link>https://radito.github.io/posts/</link>
+    <description>Recent content in Posts on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 18 Jun 2026 07:43:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Jun 2026 07:43:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🔐 Reverse Engineering Android Runtime Tampering: Building a JNI-Based Runtime Risk Detector</title>
       <link>https://radito.github.io/posts/38352adc-95ea-8071-9b53-fde3617af3c7/</link>
@@ -150,8 +150,6 @@ Akses Port UART/Serial Rooting Firmware Bawaan Dump Firmware Bawaan Install Mod 
       <description>OpenWRT is a Linux-based open-source operating system designed for embedded devices such as routers. It is a free and customizable firmware that allows users to modify and extend the functionality of their routers beyond what the manufacturer provides. OpenWRT is popular among tech enthusiasts, developers, and network administrators due to its flexibility, stability, and security features.
 Features OpenWRT comes with a range of features that make it a popular choice for embedded devices.</description>
     </item>
-    
-    
     
   </channel>
 </rss>
