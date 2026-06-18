@@ -5,7 +5,7 @@
     <link>https://radito.github.io/</link>
     <description>Recent content on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>id-ID</language>
     <lastBuildDate>Thu, 18 Jun 2026 07:43:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🔐 Reverse Engineering Android Runtime Tampering: Building a JNI-Based Runtime Risk Detector</title>
