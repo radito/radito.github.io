@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Radito&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Aug 2024 12:19:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Jun 2026 07:43:00 +0000</lastBuildDate><atom:link href="https://radito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🔐 Reverse Engineering Android Runtime Tampering: Building a JNI-Based Runtime Risk Detector</title>
+      <link>https://radito.github.io/posts/38352adc-95ea-8071-9b53-fde3617af3c7/</link>
+      <pubDate>Thu, 18 Jun 2026 07:43:00 +0000</pubDate>
+      
+      <guid>https://radito.github.io/posts/38352adc-95ea-8071-9b53-fde3617af3c7/</guid>
+      <description>Most Android root detection starts with the same boring question:
+Is su visible? Is Magisk installed? Is Xposed installed? That is useful, but it is also the easiest layer to lie to.
+When you start looking at modern Android modding stacks like Magisk, Zygisk, LSPosed, KernelSU, APatch, Shamiko, Hide My Applist, Frida, and native hook frameworks, the problem becomes less about asking “is the phone rooted?” and more about asking:</description>
+    </item>
+    
     <item>
       <title>⚠️ Disable Flash Message di Android</title>
       <link>https://radito.github.io/posts/827a05d1-ce74-47b6-8e3c-1a7f4a599e47/</link>
