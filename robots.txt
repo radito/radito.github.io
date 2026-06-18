@@ -1,3 +1,3 @@
 User-agent: *
-Disallow:
+Disallow: /portofolio/
 Sitemap: https://radito.github.io/sitemap.xml
