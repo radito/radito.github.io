@@ -1,10 +1,1 @@
-<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="200" rx="32" fill="#00AFB2"/>
-
-  <path
-    fill="#FFFFFF"
-    d="M56 34H68L81 50V84C87 75 98 70 112 70C132 70 144 82 144 102V166H119V110C119 97 114 91 105 90C91 89 82 99 82 119V166H56V34Z"
-  />
-
-  <rect x="56" y="141" width="26" height="25" fill="#000000"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none" viewBox="0 0 200 200"><rect width="200" height="200" fill="#00afb2" rx="32"/><path fill="#fff" d="M56 34h12l13 16v34c6-9 17-14 31-14 20 0 32 12 32 32v64h-25v-56c0-13-5-19-14-20-14-1-23 9-23 29v47H56z"/><path fill="#000" d="M56 141h26v25H56z"/></svg>
