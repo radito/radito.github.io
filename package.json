@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "obfuscate:portfolio": "node scripts/obfuscate-portfolio.js"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.1.1"
+  }
+}

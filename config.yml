@@ -1,0 +1,173 @@
+baseURL: "https://radito.github.io/"
+languageCode: "en-US"
+defaultContentLanguage: en
+title: Radito's Blog
+theme: PaperMod
+
+module:
+  mounts:
+    - source: content
+      target: content
+    - source: layouts
+      target: layouts
+    - source: assets
+      target: assets
+    - source: i18n
+      target: i18n
+    - source: assets/img
+      target: static/assets/img
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+pagination:
+  pagerSize: 10
+  
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Radito's Blog
+  description: "Blog tentang Tech, Coding, Embedded, dan IoT."
+  keywords:
+    [
+      Blog,
+      Portfolio,
+      Tech,
+      Coding,
+      Embedded,
+      IoT,
+      Linux,
+      Hardware,
+      Software,
+      Programming,
+      Reverse Engineering,
+      Security,
+    ]
+  author: "Radito"
+  DateFormat: "January 2, 2006"
+  telemetryHmacKey: "local-dev-telemetry-key"
+  defaultTheme: light # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  googleAnalyticsCustom: G-T5BM0HNNW0
+
+  assets:
+    disableHLJS: false
+    # disableFingerprinting: true
+    favicon: "/assets/img/favicon.ico"
+    favicon16x16: "/assets/img/favicon-16x16.png"
+    favicon32x32: "/assets/img/favicon-32x32.png"
+    apple_touch_icon: "/assets/img/apple-touch-icon.png"
+    safari_pinned_tab: "/assets/img/apple-touch-icon.png"
+
+  label:
+    text: "Radito's Blog"
+    # icon: https://www.dropbox.com/s/awbzsqcyl207kw9/favicon.ico
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome 🙋‍♂️"
+    Content: Blog tentang Tech, Coding, Embedded, dan IoT.
+
+  # socialIcons:
+  #   - name: twitter
+  #     url: "https://twitter.com/"
+  #   - name: stackoverflow
+  #     url: "https://stackoverflow.com"
+  #   - name: github
+  #     url: "https://github.com/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "hIJuohE4d1PONV6JA6mcxg6VkWOuSYk0kAxTWXBy9bg"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  editPost:
+    URL: "https://github.com/radito/radito.github.io/blob/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 2
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true

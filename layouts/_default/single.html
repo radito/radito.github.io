@@ -1,0 +1,178 @@
+{{- define "main" }}
+<link
+  rel="preload"
+  href="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.css"
+  as="style"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.css"
+/>
+
+<link
+  href="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.js"
+  rel="preload"
+  as="script"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/viewerjs@latest/dist/viewer.min.js"
+></script>
+
+<script
+  type="application/ld+json"
+  class="reviews-schema"
+  data-ref="{{ md5 .Page.Title }}"
+>
+  {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "name": "Embed Social",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "100"
+    }
+  }
+</script>
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Title }} {{- if .Draft }}<sup
+        ><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup
+      >{{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }} {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}} {{- partial "translation_list.html" .
+      -}} {{- partial "edit_post.html" . -}} {{- partial "post_canonical.html" .
+      -}}
+    </div>
+    {{- end }}
+  </header>
+  {{- $isHidden := .Params.cover.hidden | default
+  site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }} {{-
+  partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }} {{-
+  if (.Param "ShowToc") }} {{- partial "toc.html" . }} {{- end }} {{- if
+  .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }} {{- partial
+    "anchored_headings.html" .Content -}} {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}} {{- end }} {{- if (.Param
+    "ShowPostNavLinks") }} {{- partial "post_nav_links.html" . }} {{- end }}
+  </footer>
+
+  <div
+    id="comments"
+    class="thin"
+    issue-term="Blog Post - {{ .Page.Title }}"
+    style="
+      background-color: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0rem 1rem;
+    "
+  >
+    <center id="loading-comments">
+      <p style="margin: 0.5rem 0">Loading Comments ...</p>
+    </center>
+  </div>
+
+  {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}
+</article>
+
+<script>
+  const utterances = document.createElement("script");
+  utterances.src = `https://utteranc.es/client.js`;
+  utterances.setAttribute("repo", "radito/radito.github.io");
+  utterances.setAttribute("issue-term", "");
+  utterances.setAttribute("theme", "");
+  utterances.setAttribute("crossorigin", "anonymous");
+  utterances.async = true;
+
+  window.addEventListener("load", function () {
+    document.querySelectorAll("img").forEach((v, i) => {
+      const view = new Viewer(v, {
+        movable: false,
+        navbar: false,
+        toolbar: false,
+        focus: true,
+        transition: false,
+      });
+
+      v.addEventListener("show", function () {
+        document.getElementsByTagName("html")[0].style.overflow = "hidden";
+      });
+
+      v.addEventListener("hide", function () {
+        document.getElementsByTagName("html")[0].style.overflow = "scroll";
+      });
+    });
+  });
+
+  document
+    .getElementById("theme-toggle")
+    .addEventListener("click", async () => {
+      const choosedTheme = localStorage.getItem("pref-theme");
+      const utterancesFrame = document.querySelector(".utterances-frame");
+
+      if (choosedTheme == "light") {
+        setSyntaxMode("dark");
+        document.documentElement.classList.remove("c_darkmode");
+      } else {
+        setSyntaxMode("light");
+
+        document.documentElement.classList.remove("c_darkmode");
+        document.documentElement.classList.add("c_darkmode");
+      }
+
+      if (utterancesFrame) {
+        const message = {
+          type: "set-theme",
+          theme: choosedTheme == "light" ? "github-dark" : "github-light",
+        };
+
+        utterancesFrame.contentWindow.postMessage(
+          message,
+          "https://utteranc.es"
+        );
+      }
+    });
+
+  window.onload = async () => {
+    const choosedTheme = localStorage.getItem("pref-theme");
+    const comments = document.getElementById("comments");
+    const issueTerm = comments.getAttribute("issue-term");
+    const loading = document.getElementById("loading-comments");
+
+    setSyntaxMode(choosedTheme);
+    utterances.setAttribute("theme", `github-${choosedTheme ?? "light"}`);
+    utterances.setAttribute("issue-term", issueTerm);
+
+    window.addEventListener("message", function (e) {
+      if (new URL(e?.origin).host == "utteranc.es") {
+        loading.remove();
+      }
+    });
+
+    comments.appendChild(utterances);
+  };
+</script>
+
+{{- end }}{{/* end main */}}

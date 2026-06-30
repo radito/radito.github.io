@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /portofolio/
+{{- if not (hugo.IsProduction | or (eq site.Params.env "production")) }}
+Disallow: /
+{{- end }}
+Sitemap: {{ "sitemap.xml" | absURL }}
