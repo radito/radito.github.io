@@ -18,7 +18,7 @@
       <description>Most face-recognition demos start with an API call.
 Upload an image. Wait for a response. Receive a face ID. That is convenient, but it also means the most sensitive part of the image leaves the machine.
 I wanted to explore the opposite design:
-Camera frame ↓ Apple Vision landmarks ↓ Rust tracking and geometry ↓ Optional on-device face embedding ↓ Local SQLite identity gallery That experiment became FaceML. The Rust crate and executables are named facefeature.</description>
+Camera frame ↓ Apple Vision landmarks ↓ Rust tracking and geometry ↓ Optional polygon or depth face mask ↓ Optional on-device face embedding ↓ Local SQLite identity gallery That experiment became FaceML.</description>
     </item>
     
     <item>
